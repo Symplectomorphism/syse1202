@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "lecture.html#agenda",
+    "href": "lecture.html#agenda",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Agenda",
+    "text": "Agenda\n\n\n\nThe Evolution\n\nFrom Clockwork to Neural Nets.\n\nThe Concepts\n\nDS vs. AI vs. ML.\n\nThe Lifecycle\n\nWhere AI fits in the V-Model.\n\n\n\n\nLive Case Study\n\nThe Furuta Pendulum.\n\nThe Future\n\nBlack boxes & Ethics."
+  },
+  {
+    "objectID": "lecture.html#classical-vs.-intelligent-systems",
+    "href": "lecture.html#classical-vs.-intelligent-systems",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Classical vs. Intelligent Systems",
+    "text": "Classical vs. Intelligent Systems\n\n\n\nDeterministic  Predictable. Static.\n\n\n\nStochastic  Adaptive. Learning.\n\n\n\nScript: “Historically, SE was about building clockwork. If I turn gear A, gear B moves. Today, we build systems like the Mars Rover. It encounters unknown terrain. We can’t pre-program every reaction. It has to learn.”"
+  },
+  {
+    "objectID": "lecture.html#why-we-need-ai",
+    "href": "lecture.html#why-we-need-ai",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Why We Need AI",
+    "text": "Why We Need AI\n\n\n\n\nThe Complexity Gap\n\nData Volume: Terabytes/hour.\nDimensionality: Systems with 1000+ variables.\nHuman Limits: We cannot manually optimize these anymore.\n\n\n\nScript: “Why can’t we just write ‘if-then’ statements? Because modern systems look like this (point to network map). They are too complex for manual analysis.”"
+  },
+  {
+    "objectID": "lecture.html#disentangling-the-buzzwords",
+    "href": "lecture.html#disentangling-the-buzzwords",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Disentangling the Buzzwords",
+    "text": "Disentangling the Buzzwords\n\n\n\n\nScript: “Let’s be precise. AI is the machine acting smart. ML is the algorithm learning from data. Deep Learning is the neural network approach. Data Science is the analysis of the logs.”"
+  },
+  {
+    "objectID": "lecture.html#the-engineering-view",
+    "href": "lecture.html#the-engineering-view",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "The Engineering View",
+    "text": "The Engineering View\n\n\nClassical\n\\[ y = f(x) \\] We know the physics (F=ma). We write the equation.\n\nMachine Learning\n\\[ y \\approx \\hat{f}(x) \\] We have the data points. The computer finds the curve.\n\n\n\n\n\nScript: “To an engineer, ML is just ‘Function Approximation.’ We have a bunch of dots (data), and we ask the computer to draw the best line through them. That line becomes our law.”"
+  },
+  {
+    "objectID": "lecture.html#the-v-model-and-ai",
+    "href": "lecture.html#the-v-model-and-ai",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "The V-Model and AI",
+    "text": "The V-Model and AI\n\n\n\n\nScript: “This is the Holy Grail of SE: The V-Model. Think of it as the ‘Map of Engineering.’\n\nThe Basic V: We go down into the details (Left) and then back up into the real world (Right).\nThe AI Connection (Dual-Track): AI is just a subsystem. The V-Model ensures the ‘Smart’ AI code actually integrates with the ‘Real’ hardware.\nThe Requirement Shift: Instead of writing rules (If-Then), we design the Data. We are engineering the environment the AI learns from.\nThe Verification Gap: We can’t test every line of code in a neural network. Verification shifts from ‘Does it match logic?’ to ‘Does it handle the statistical edge cases?’”"
+  },
+  {
+    "objectID": "lecture.html#operations-the-digital-twin",
+    "href": "lecture.html#operations-the-digital-twin",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Operations: The Digital Twin",
+    "text": "Operations: The Digital Twin\n\n\n\nPhysical Asset\n\n\nDigital Replica\n\n\nScript: “We build a Digital Twin. The physical engine sends data to the digital one. The digital one uses ML to predict failures before they happen.”"
+  },
+  {
+    "objectID": "lecture.html#the-furuta-pendulum",
+    "href": "lecture.html#the-furuta-pendulum",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "The Furuta Pendulum",
+    "text": "The Furuta Pendulum\n\n\n\nGoal: Balance upright.\nActuator: Base Motor.\nSensor: Encoders.\n\n\n\n\n\n\nScript: (Walk to the table) “Here it is. The Furuta Pendulum. It has a motor, an arm, and a pendulum. It looks like a system. But is it?”"
+  },
+  {
+    "objectID": "lecture.html#the-integration-gap",
+    "href": "lecture.html#the-integration-gap",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "The Integration Gap",
+    "text": "The Integration Gap\n\n\n\n\nHardware: Assembled (Physical).\nSoftware: Neural Network (Code).\nStatus: Not Working (Yet).\n\n\nScript: “Right now, this isn’t working. The hardware is here. The AI code is on my laptop. But the Interface is missing. Systems Engineering is about connecting these two.”"
+  },
+  {
+    "objectID": "lecture.html#how-ai-learns-to-control",
+    "href": "lecture.html#how-ai-learns-to-control",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "How AI Learns to Control",
+    "text": "How AI Learns to Control\n\n\n\n\nReinforcement Learning\n\nObserve state.\nTake Action (Voltage).\nGet Reward (+1 if upright).\n\n\n\nScript: “We use Reinforcement Learning. The AI tries random things. It fails. It learns. Eventually, it masters the physics.”"
+  },
+  {
+    "objectID": "lecture.html#sim2real-the-reality-check",
+    "href": "lecture.html#sim2real-the-reality-check",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Sim2Real: The Reality Check",
+    "text": "Sim2Real: The Reality Check\n\n\nSimulation\n\nPerfect Math\n\nReality\n\nNoise & Friction\n\n\nScript: “We train in simulation (perfect). We deploy to reality (messy). If the model overfits, the robot crashes. We need Robust Control.”"
+  },
+  {
+    "objectID": "lecture.html#the-black-box-problem",
+    "href": "lecture.html#the-black-box-problem",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "The Black Box Problem",
+    "text": "The Black Box Problem\n\n\nClassical Code\nIF speed &gt; 50 THEN brake (Traceable)\n\nNeural Network\n0.23 * x1 + 0.99 * x2 ... (Opaque)\n\n\n\n\n\nScript: “Traditional code is readable. Neural networks are millions of opaque numbers. Traceability is a massive open problem in SE.”"
+  },
+  {
+    "objectID": "lecture.html#ethics-responsibility",
+    "href": "lecture.html#ethics-responsibility",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Ethics & Responsibility",
+    "text": "Ethics & Responsibility\n\n\n\n\nScript: “If an autonomous car hits a pedestrian to save the passenger, who is responsible? As we build autonomous systems, we are engineering moral agents.”"
+  },
+  {
+    "objectID": "lecture.html#summary",
+    "href": "lecture.html#summary",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Summary",
+    "text": "Summary\n\n\n\n\n\nSystems are changing: From static to dynamic.\nTools: Python/MATLAB + Control Theory.\nMindset: AI is just a subsystem. Integration is key."
+  },
+  {
+    "objectID": "lecture.html#qa",
+    "href": "lecture.html#qa",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Q&A",
+    "text": "Q&A\n\nDr. Aykut Satici\nDepartment of Systems Engineering\nUniversity of Texas at Dallas\nQuestions?"
+  }
+]
