@@ -24,7 +24,7 @@ format:
 ### My Journey
 *   **Education**: BS/MS in Mechatronics (Turkey), PhD in EE & MS in Math (UTD).
 *   **Research Training**: Postdoc at U. Naples (Italy) & MIT (USA).
-*   **Professorate**: Assistant & Associate Professor (Tenured) at **Boise State University** (2017-2025).
+*   **Professorate**: Assistant & Associate Professor at **Boise State University** (2017-2025).
 *   **Currently**: Back home at **UT Dallas** as Associate Professor of Systems Engineering.
 :::
 
@@ -71,6 +71,7 @@ format:
 * At BSU, I worked on the challenge of "contact." Most robots are afraid of touching things too hard.
 * We used Systems Engineering to design controllers that handle these impacts gracefully.
 :::
+
 
 ## Systems Engineering in Action {.smaller}
 
@@ -256,6 +257,68 @@ We have a bunch of dots (data), and we ask the computer to draw the best line th
 "We build a Digital Twin. The physical engine sends data to the digital one. The digital one uses ML to predict failures before they happen."
 :::
 
+## Astria: Digital Twin {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+*   **The Physical Asset**: Autonomous drone with a gripper.
+*   **The Digital Replica**: High-fidelity physics-based simulation.
+*   **Systems Goal**: Testing contact physics and control logic virtually before risking expensive hardware on power lines.
+:::
+
+::: {.column width="50%"}
+::: {layout-ncol=2}
+{{< video videos/astria.mp4 autoplay="true" loop="true" muted="true" >}}
+
+{{< video videos/unclamped_then_clamped.mp4 autoplay="true" loop="true" muted="true" >}}
+:::
+<center>**Real-world (Left) vs. Sim2Real Replica (Right)**</center>
+:::
+
+::::
+
+::: notes
+**Script:**
+"Here is a concrete example from our research. We have the physical Astria drone, and we have its high-fidelity digital replica. Before we fly near high-voltage lines, we test every control algorithm in the digital twin to ensure the system behaves as expected."
+:::
+
+## Rimless Wheel: Robustness {.smaller}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+*   **Systems Goal**: Walking that doesn't fall when the ground changes.
+*   **Non-examples**: 
+    *   Falling over (unstable).
+    *   Tripping on uneven ground (fragile).
+*   **Examples**:
+    *   Steady rhythm on flat ground.
+    *   **Robustness**: Recovering from uneven terrain.
+:::
+
+::: {.column width="60%"}
+**Non-examples (Not Working)**
+
+::: {layout-ncol=2}
+{{< video videos/rw_even.mp4 autoplay="true" loop="true" muted="true" >}}
+
+{{< video videos/rw_uneven_success.mp4 autoplay="true" loop="true" muted="true" >}}
+:::
+
+<br/>
+
+**Examples (Working Well)**
+
+::: {layout-ncol=2}
+{{< video videos/rw_failing.mp4 autoplay="true" loop="true" muted="true" >}}
+
+{{< video videos/rw_uneven.mp4 autoplay="true" loop="true" muted="true" >}}
+:::
+:::
+
+::::
+
 # Part 4: Live Case Study {background-color="#154734"}
 
 ## The Furuta Pendulum
@@ -297,6 +360,25 @@ It looks like a system. But is it?"
 The hardware is here. The AI code is on my laptop.
 But the **Interface** is missing. Systems Engineering is about connecting these two."
 :::
+
+## Learning to Walk: RL in Action {.smaller}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+*   **The Goal**: Make the robot walk forward.
+*   **The Process**:
+    *   Start with zero knowledge.
+    *   Try random actions.
+    *   Get rewarded for forward motion.
+    *   **Result**: Emergent walking behavior.
+:::
+
+::: {.column width="60%"}
+{{< video videos/walking_RL.mp4 autoplay="true" loop="true" muted="true" >}}
+:::
+
+::::
 
 ## How AI Learns to Control
 

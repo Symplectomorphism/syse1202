@@ -4,7 +4,7 @@
     "href": "lecture.html#who-am-i",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Who am I?",
-    "text": "Who am I?\n\n\nMy Journey\n\nEducation: BS/MS in Mechatronics (Turkey), PhD in EE & MS in Math (UTD).\nResearch Training: Postdoc at U. Naples (Italy) & MIT (USA).\nProfessorate: Assistant & Associate Professor (Tenured) at Boise State University (2017-2025).\nCurrently: Back home at UT Dallas as Associate Professor of Systems Engineering.\n\n\n\n\n\n\n\nI’ve been around! I started in Turkey, did my PhD here at UTD, and then spent time in Italy and MIT.\nI spent the last 9 years at Boise State where I built my research lab and received tenure.\nI’m thrilled to be back at UTD starting this semester!"
+    "text": "Who am I?\n\n\nMy Journey\n\nEducation: BS/MS in Mechatronics (Turkey), PhD in EE & MS in Math (UTD).\nResearch Training: Postdoc at U. Naples (Italy) & MIT (USA).\nProfessorate: Assistant & Associate Professor at Boise State University (2017-2025).\nCurrently: Back home at UT Dallas as Associate Professor of Systems Engineering.\n\n\n\n\n\n\n\nI’ve been around! I started in Turkey, did my PhD here at UTD, and then spent time in Italy and MIT.\nI spent the last 9 years at Boise State where I built my research lab and received tenure.\nI’m thrilled to be back at UTD starting this semester!"
   },
   {
     "objectID": "lecture.html#bsu-locomotion-contact",
@@ -70,6 +70,20 @@
     "text": "Operations: The Digital Twin\n\n\n\nPhysical Asset\n\n\nDigital Replica\n\n\nScript: “We build a Digital Twin. The physical engine sends data to the digital one. The digital one uses ML to predict failures before they happen.”"
   },
   {
+    "objectID": "lecture.html#astria-digital-twin",
+    "href": "lecture.html#astria-digital-twin",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Astria: Digital Twin",
+    "text": "Astria: Digital Twin\n\n\n\nThe Physical Asset: Autonomous drone with a gripper.\nThe Digital Replica: High-fidelity physics-based simulation.\nSystems Goal: Testing contact physics and control logic virtually before risking expensive hardware on power lines.\n\n\n\n\n\n\n\n\n\n\n\n\n\nReal-world (Left) vs. Sim2Real Replica (Right)\n\n\n\nScript: “Here is a concrete example from our research. We have the physical Astria drone, and we have its high-fidelity digital replica. Before we fly near high-voltage lines, we test every control algorithm in the digital twin to ensure the system behaves as expected.”"
+  },
+  {
+    "objectID": "lecture.html#rimless-wheel-robustness",
+    "href": "lecture.html#rimless-wheel-robustness",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Rimless Wheel: Robustness",
+    "text": "Rimless Wheel: Robustness\n\n\n\nSystems Goal: Walking that doesn’t fall when the ground changes.\nNon-examples:\n\nFalling over (unstable).\nTripping on uneven ground (fragile).\n\nExamples:\n\nSteady rhythm on flat ground.\nRobustness: Recovering from uneven terrain.\n\n\n\nNon-examples (Not Working)\n\n\n\n\n\n\n\n\n\n\n\nExamples (Working Well)"
+  },
+  {
     "objectID": "lecture.html#the-furuta-pendulum",
     "href": "lecture.html#the-furuta-pendulum",
     "title": "Data Science, AI, and ML in Systems Engineering",
@@ -82,6 +96,13 @@
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "The Integration Gap",
     "text": "The Integration Gap\n\n\n\n\nHardware: Assembled (Physical).\nSoftware: Neural Network (Code).\nStatus: Not Working (Yet).\n\n\nScript: “Right now, this isn’t working. The hardware is here. The AI code is on my laptop. But the Interface is missing. Systems Engineering is about connecting these two.”"
+  },
+  {
+    "objectID": "lecture.html#learning-to-walk-rl-in-action",
+    "href": "lecture.html#learning-to-walk-rl-in-action",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Learning to Walk: RL in Action",
+    "text": "Learning to Walk: RL in Action\n\n\n\nThe Goal: Make the robot walk forward.\nThe Process:\n\nStart with zero knowledge.\nTry random actions.\nGet rewarded for forward motion.\nResult: Emergent walking behavior."
   },
   {
     "objectID": "lecture.html#how-ai-learns-to-control",

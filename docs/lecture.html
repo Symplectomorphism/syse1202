@@ -154,7 +154,7 @@ Aykut C. Satici
 <ul>
 <li><strong>Education</strong>: BS/MS in Mechatronics (Turkey), PhD in EE &amp; MS in Math (UTD).</li>
 <li><strong>Research Training</strong>: Postdoc at U. Naples (Italy) &amp; MIT (USA).</li>
-<li><strong>Professorate</strong>: Assistant &amp; Associate Professor (Tenured) at <strong>Boise State University</strong> (2017-2025).</li>
+<li><strong>Professorate</strong>: Assistant &amp; Associate Professor at <strong>Boise State University</strong> (2017-2025).</li>
 <li><strong>Currently</strong>: Back home at <strong>UT Dallas</strong> as Associate Professor of Systems Engineering.</li>
 </ul>
 </div><div class="column" style="width:48%;">
@@ -468,6 +468,87 @@ Aykut C. Satici
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="astria-digital-twin" class="slide level2 smaller center">
+<h2>Astria: Digital Twin</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>The Physical Asset</strong>: Autonomous drone with a gripper.</li>
+<li><strong>The Digital Replica</strong>: High-fidelity physics-based simulation.</li>
+<li><strong>Systems Goal</strong>: Testing contact physics and control logic virtually before risking expensive hardware on power lines.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<video id="video_shortcode_videojs_video6" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/astria.mp4"></video>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<video id="video_shortcode_videojs_video7" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/unclamped_then_clamped.mp4"></video>
+</div>
+</div>
+</div>
+<center>
+<strong>Real-world (Left) vs.&nbsp;Sim2Real Replica (Right)</strong>
+</center>
+</div></div>
+<aside class="notes">
+<p><strong>Script:</strong> “Here is a concrete example from our research. We have the physical Astria drone, and we have its high-fidelity digital replica. Before we fly near high-voltage lines, we test every control algorithm in the digital twin to ensure the system behaves as expected.”</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="rimless-wheel-robustness" class="slide level2 smaller center">
+<h2>Rimless Wheel: Robustness</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li><strong>Systems Goal</strong>: Walking that doesn’t fall when the ground changes.</li>
+<li><strong>Non-examples</strong>:
+<ul>
+<li>Falling over (unstable).</li>
+<li>Tripping on uneven ground (fragile).</li>
+</ul></li>
+<li><strong>Examples</strong>:
+<ul>
+<li>Steady rhythm on flat ground.</li>
+<li><strong>Robustness</strong>: Recovering from uneven terrain.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><strong>Non-examples (Not Working)</strong></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<video id="video_shortcode_videojs_video8" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/rw_even.mp4"></video>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<video id="video_shortcode_videojs_video9" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/rw_uneven_success.mp4"></video>
+</div>
+</div>
+</div>
+<p><br></p>
+<p><strong>Examples (Working Well)</strong></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<video id="video_shortcode_videojs_video10" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/rw_failing.mp4"></video>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<video id="video_shortcode_videojs_video11" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/rw_uneven.mp4"></video>
+</div>
+</div>
+</div>
+</div></div>
 </section></section>
 <section>
 <section id="part-4-live-case-study" class="title-slide slide level1 center" data-background-color="#154734">
@@ -524,6 +605,24 @@ Aykut C. Satici
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="learning-to-walk-rl-in-action" class="slide level2 smaller center">
+<h2>Learning to Walk: RL in Action</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li><strong>The Goal</strong>: Make the robot walk forward.</li>
+<li><strong>The Process</strong>:
+<ul>
+<li>Start with zero knowledge.</li>
+<li>Try random actions.</li>
+<li>Get rewarded for forward motion.</li>
+<li><strong>Result</strong>: Emergent walking behavior.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<video id="video_shortcode_videojs_video12" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/walking_RL.mp4"></video>
+</div></div>
 </section>
 <section id="how-ai-learns-to-control" class="slide level2 center">
 <h2>How AI Learns to Control</h2>
@@ -1047,6 +1146,13 @@ Aykut C. Satici
     <script>videojs(video_shortcode_videojs_video3);</script>
     <script>videojs(video_shortcode_videojs_video4);</script>
     <script>videojs(video_shortcode_videojs_video5);</script>
+    <script>videojs(video_shortcode_videojs_video6);</script>
+    <script>videojs(video_shortcode_videojs_video7);</script>
+    <script>videojs(video_shortcode_videojs_video8);</script>
+    <script>videojs(video_shortcode_videojs_video9);</script>
+    <script>videojs(video_shortcode_videojs_video10);</script>
+    <script>videojs(video_shortcode_videojs_video11);</script>
+    <script>videojs(video_shortcode_videojs_video12);</script>
     
 
 </body></html>
