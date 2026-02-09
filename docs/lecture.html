@@ -6,11 +6,13 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.27">
 
-  <meta name="author" content="Dr.&nbsp;Aykut Satici">
-  <meta name="dcterms.date" content="2026-02-08">
+  <meta name="author" content="Aykut C. Satici">
+  <meta name="dcterms.date" content="2026-02-09">
   <title>Data Science, AI, and ML in Systems Engineering</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -134,7 +136,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Dr.&nbsp;Aykut Satici 
+Aykut C. Satici 
 </div>
         <p class="quarto-title-affiliation">
             University of Texas at Dallas
@@ -142,7 +144,136 @@ Dr.&nbsp;Aykut Satici
     </div>
 </div>
 
-  <p class="date">2026-02-08</p>
+  <p class="date">2026-02-09</p>
+</section>
+<section id="who-am-i" class="slide level2 smaller center">
+<h2>Who am I?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="my-journey">My Journey</h3>
+<ul>
+<li><strong>Education</strong>: BS/MS in Mechatronics (Turkey), PhD in EE &amp; MS in Math (UTD).</li>
+<li><strong>Research Training</strong>: Postdoc at U. Naples (Italy) &amp; MIT (USA).</li>
+<li><strong>Professorate</strong>: Assistant &amp; Associate Professor (Tenured) at <strong>Boise State University</strong> (2017-2025).</li>
+<li><strong>Currently</strong>: Back home at <strong>UT Dallas</strong> as Associate Professor of Systems Engineering.</li>
+</ul>
+</div><div class="column" style="width:48%;">
+<p><img data-src="images/sabanci_team.jpg" class="quarto-figure quarto-figure-center" height="230"><br>
+<img data-src="images/spong-lab-650-2013-08.jpg" class="quarto-figure quarto-figure-center" height="230"></p>
+</div></div>
+<aside class="notes">
+<ul>
+<li>I’ve been around! I started in Turkey, did my PhD here at UTD, and then spent time in Italy and MIT.</li>
+<li>I spent the last 9 years at Boise State where I built my research lab and received tenure.</li>
+<li>I’m thrilled to be back at UTD starting this semester!</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="bsu-locomotion-contact" class="slide level2 smaller center">
+<h2>BSU: Locomotion &amp; Contact</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<ul>
+<li><strong>The Problem</strong>: Robots struggle with uneven terrain and physical collisions.</li>
+<li><strong>The Solutions</strong>:
+<ul>
+<li><strong>Rimless Wheel</strong>: Stability of passive walking.</li>
+<li><strong>Astria</strong>: Drone/power-line interaction.</li>
+<li><strong>IWP</strong>: Energy-shaping control for acrobatics.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:55%;">
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/iwp.mp4"></video>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/astria.mp4"></video>
+</div>
+</div>
+</div>
+<center>
+<img data-src="images/rimless_wheel.webp" style="width:50.0%">
+</center>
+</div></div>
+<aside class="notes">
+<ul>
+<li>At BSU, I worked on the challenge of “contact.” Most robots are afraid of touching things too hard.</li>
+<li>We used Systems Engineering to design controllers that handle these impacts gracefully.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="systems-engineering-in-action" class="slide level2 smaller center">
+<h2>Systems Engineering in Action</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<center>
+<strong>Drones</strong>
+</center>
+<video id="video_shortcode_videojs_video3" width="300" height="225" class="video-js vjs-default-skin " controls="" preload="auto" data-setup="{}" title=""><source src="videos/quadrotor_lissajous.mp4"></video>
+</div><div class="column" style="width:33%;">
+<center>
+<strong>Soft Juggling</strong>
+</center>
+<video id="video_shortcode_videojs_video4" width="300" height="225" class="video-js vjs-default-skin " controls="" preload="auto" data-setup="{}" title=""><source src="videos/soft_juggler.mp4"></video>
+</div><div class="column" style="width:33%;">
+<center>
+<strong>Manipulation</strong>
+</center>
+<video id="video_shortcode_videojs_video5" width="300" height="225" class="video-js vjs-default-skin " controls="" preload="auto" data-setup="{}" title=""><source src="videos/pizza_tossing.mp4"></video>
+</div></div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Systems Engineering connects <strong>Control Theory</strong>, <strong>Embedded Systems</strong>, and <strong>Mechanical Design</strong> to make these robots work in the real world.</p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<ul>
+<li>These videos show systems level integration.</li>
+<li>Drones: Hardware + Real-time control.</li>
+<li>Soft Robots: Complex modeling + Sensing.</li>
+<li>Manipulation: High-speed coordination.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="agenda" class="slide level2 center">
 <h2>Agenda</h2>
@@ -162,7 +293,7 @@ Dr.&nbsp;Aykut Satici
 <li>Where AI fits in the V-Model.</li>
 </ul></li>
 </ol>
-</div><div class="column" style="text-align: right;">
+</div><div class="column" style="width: 40%; text-align: right;">
 <ol start="4" type="1">
 <li><strong>Live Case Study</strong>
 <ul>
@@ -317,10 +448,10 @@ Dr.&nbsp;Aykut Satici
 <section id="operations-the-digital-twin" class="slide level2 center">
 <h2>Operations: The Digital Twin</h2>
 <div class="columns">
-<div class="column" style="text-align: center;">
+<div class="column" style="width: 50%; text-align: center;">
 <p><img data-src="https://upload.wikimedia.org/wikipedia/commons/3/38/General_Electric_GEnx_on_747-8I_prototype.jpg" height="350"></p>
 <p><strong>Physical Asset</strong></p>
-</div><div class="column" style="text-align: center;">
+</div><div class="column" style="width: 50%; text-align: center;">
 <p><img data-src="https://upload.wikimedia.org/wikipedia/commons/7/75/Turbofan_operation.svg" height="350"></p>
 <p><strong>Digital Replica</strong></p>
 </div></div>
@@ -424,11 +555,11 @@ Dr.&nbsp;Aykut Satici
 <section id="sim2real-the-reality-check" class="slide level2 center">
 <h2>Sim2Real: The Reality Check</h2>
 <div class="columns">
-<div class="column" style="text-align: center;">
+<div class="column" style="width: 50%; text-align: center;">
 <p><strong>Simulation</strong></p>
 <p><img data-src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Reinforcement_learning_diagram.svg" height="300"></p>
 <p><em>Perfect Math</em></p>
-</div><div class="column" style="text-align: center;">
+</div><div class="column" style="width: 50%; text-align: center;">
 <p><strong>Reality</strong></p>
 <p><img data-src="https://upload.wikimedia.org/wikipedia/commons/f/f0/RotaryInvertedPendulum.JPG" style="filter: blur(1px) contrast(120%);" height="300"></p>
 <p><em>Noise &amp; Friction</em></p>
@@ -519,7 +650,7 @@ Dr.&nbsp;Aykut Satici
 <section id="qa" class="slide level2 center">
 <h2>Q&amp;A</h2>
 <center>
-<p><strong>Dr.&nbsp;Aykut Satici</strong><br>
+<p><strong>Aykut Satici</strong><br>
 <em>Department of Systems Engineering</em><br>
 <em>University of Texas at Dallas</em></p>
 <em>Questions?</em>
@@ -531,7 +662,7 @@ Dr.&nbsp;Aykut Satici
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="images/logo.svg" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Introduction to Systems Engineering | Dr.&nbsp;Satici</p>
+<p>Introduction to Systems Engineering | A. C. Satici</p>
 </div>
 </div></div>
 
@@ -911,6 +1042,11 @@ Dr.&nbsp;Aykut Satici
         }
       });
       </script>
+    <script>videojs(video_shortcode_videojs_video1);</script>
+    <script>videojs(video_shortcode_videojs_video2);</script>
+    <script>videojs(video_shortcode_videojs_video3);</script>
+    <script>videojs(video_shortcode_videojs_video4);</script>
+    <script>videojs(video_shortcode_videojs_video5);</script>
     
 
 </body></html>

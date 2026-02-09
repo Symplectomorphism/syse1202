@@ -1,7 +1,7 @@
 ---
 title: "Data Science, AI, and ML in Systems Engineering"
 subtitle: "From Classical Control to Intelligent Systems"
-author: "Dr. Aykut Satici"
+author: "Aykut C. Satici"
 institute: "University of Texas at Dallas"
 department: "Department of Systems Engineering"
 date: last-modified
@@ -13,8 +13,96 @@ format:
     show-slide-number: all
     transition: fade
     center: true
-    footer: "Introduction to Systems Engineering | Dr. Satici"
+    footer: "Introduction to Systems Engineering | A. C. Satici"
 ---
+
+## Who am I? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### My Journey
+*   **Education**: BS/MS in Mechatronics (Turkey), PhD in EE & MS in Math (UTD).
+*   **Research Training**: Postdoc at U. Naples (Italy) & MIT (USA).
+*   **Professorate**: Assistant & Associate Professor (Tenured) at **Boise State University** (2017-2025).
+*   **Currently**: Back home at **UT Dallas** as Associate Professor of Systems Engineering.
+:::
+
+::: {.column width="48%"}
+![](images/sabanci_team.jpg){height="230" fig-align="center"} \
+![](images/spong-lab-650-2013-08.jpg){height="230" fig-align="center"}
+:::
+
+::::
+
+::: notes
+* I've been around! I started in Turkey, did my PhD here at UTD, and then spent time in Italy and MIT.
+* I spent the last 9 years at Boise State where I built my research lab and received tenure.
+* I'm thrilled to be back at UTD starting this semester!
+:::
+
+## BSU: Locomotion & Contact {.smaller}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+*   **The Problem**: Robots struggle with uneven terrain and physical collisions.
+*   **The Solutions**:
+    *   **Rimless Wheel**: Stability of passive walking.
+    *   **Astria**: Drone/power-line interaction.
+    *   **IWP**: Energy-shaping control for acrobatics.
+:::
+
+::: {.column width="55%"}
+::: {layout-ncol=2}
+{{< video videos/iwp.mp4 autoplay="true" loop="true" muted="true" >}}
+
+{{< video videos/astria.mp4 autoplay="true" loop="true" muted="true" >}}
+:::
+
+<center>
+![](images/rimless_wheel.webp){width="50%"}
+</center>
+:::
+
+::::
+
+::: notes
+* At BSU, I worked on the challenge of "contact." Most robots are afraid of touching things too hard.
+* We used Systems Engineering to design controllers that handle these impacts gracefully.
+:::
+
+## Systems Engineering in Action {.smaller}
+
+:::: {.columns}
+
+::: {.column width="33%"}
+<center>**Drones**</center>
+{{< video videos/quadrotor_lissajous.mp4 aspect-ratio=4x3 width="300" autoplay="true" loop="true" muted="true" >}}
+:::
+
+::: {.column width="33%"}
+<center>**Soft Juggling**</center>
+{{< video videos/soft_juggler.mp4 aspect-ratio=4x3 width="300" autoplay="true" loop="true" muted="true" >}}
+:::
+
+::: {.column width="33%"}
+<center>**Manipulation**</center>
+{{< video videos/pizza_tossing.mp4 aspect-ratio=4x3 width="300" autoplay="true" loop="true" muted="true" >}}
+:::
+
+::::
+
+::: {.callout-note}
+Systems Engineering connects **Control Theory**, **Embedded Systems**, and **Mechanical Design** to make these robots work in the real world.
+:::
+
+::: notes
+* These videos show systems level integration.
+* Drones: Hardware + Real-time control.
+* Soft Robots: Complex modeling + Sensing.
+* Manipulation: High-speed coordination.
+:::
 
 ## Agenda
 
@@ -28,7 +116,7 @@ format:
     *   Where AI fits in the V-Model.
 :::
 
-::: {.column width="40%" style="text-align: right;"}
+::: {.column style="width: 40%; text-align: right;"}
 4.  **Live Case Study**
     *   The Furuta Pendulum.
 5.  **The Future**
@@ -150,13 +238,13 @@ We have a bunch of dots (data), and we ask the computer to draw the best line th
 ## Operations: The Digital Twin
 
 ::: columns
-::: {.column width="50%" style="text-align: center;"}
+::: {.column style="width: 50%; text-align: center;"}
 ![](https://upload.wikimedia.org/wikipedia/commons/3/38/General_Electric_GEnx_on_747-8I_prototype.jpg){height="350"}
 
 **Physical Asset**
 :::
 
-::: {.column width="50%" style="text-align: center;"}
+::: {.column style="width: 50%; text-align: center;"}
 ![](https://upload.wikimedia.org/wikipedia/commons/7/75/Turbofan_operation.svg){height="350"}
 
 **Digital Replica**
@@ -235,7 +323,7 @@ The AI tries random things. It fails. It learns. Eventually, it masters the phys
 ## Sim2Real: The Reality Check
 
 ::: columns
-::: {.column width="50%" style="text-align: center;"}
+::: {.column style="width: 50%; text-align: center;"}
 **Simulation**
 
 ![](https://upload.wikimedia.org/wikipedia/commons/1/1b/Reinforcement_learning_diagram.svg){height="300"}
@@ -243,7 +331,7 @@ The AI tries random things. It fails. It learns. Eventually, it masters the phys
 *Perfect Math*
 :::
 
-::: {.column width="50%" style="text-align: center;"}
+::: {.column style="width: 50%; text-align: center;"}
 **Reality**
 
 ![](https://upload.wikimedia.org/wikipedia/commons/f/f0/RotaryInvertedPendulum.JPG){height="300" style="filter: blur(1px) contrast(120%);"}
@@ -319,7 +407,7 @@ As we build autonomous systems, we are engineering moral agents."
 ## Q&A
 
 <center>
-**Dr. Aykut Satici** \
+**Aykut Satici** \
 *Department of Systems Engineering* \
 *University of Texas at Dallas*
 

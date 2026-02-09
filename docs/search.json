@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "lecture.html#who-am-i",
+    "href": "lecture.html#who-am-i",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Who am I?",
+    "text": "Who am I?\n\n\nMy Journey\n\nEducation: BS/MS in Mechatronics (Turkey), PhD in EE & MS in Math (UTD).\nResearch Training: Postdoc at U. Naples (Italy) & MIT (USA).\nProfessorate: Assistant & Associate Professor (Tenured) at Boise State University (2017-2025).\nCurrently: Back home at UT Dallas as Associate Professor of Systems Engineering.\n\n\n\n\n\n\n\nI’ve been around! I started in Turkey, did my PhD here at UTD, and then spent time in Italy and MIT.\nI spent the last 9 years at Boise State where I built my research lab and received tenure.\nI’m thrilled to be back at UTD starting this semester!"
+  },
+  {
+    "objectID": "lecture.html#bsu-locomotion-contact",
+    "href": "lecture.html#bsu-locomotion-contact",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "BSU: Locomotion & Contact",
+    "text": "BSU: Locomotion & Contact\n\n\n\nThe Problem: Robots struggle with uneven terrain and physical collisions.\nThe Solutions:\n\nRimless Wheel: Stability of passive walking.\nAstria: Drone/power-line interaction.\nIWP: Energy-shaping control for acrobatics.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAt BSU, I worked on the challenge of “contact.” Most robots are afraid of touching things too hard.\nWe used Systems Engineering to design controllers that handle these impacts gracefully."
+  },
+  {
+    "objectID": "lecture.html#systems-engineering-in-action",
+    "href": "lecture.html#systems-engineering-in-action",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Systems Engineering in Action",
+    "text": "Systems Engineering in Action\n\n\n\nDrones\n\n\n\n\nSoft Juggling\n\n\n\n\nManipulation\n\n\n\n\n\n\n\n\n\nNote\n\n\nSystems Engineering connects Control Theory, Embedded Systems, and Mechanical Design to make these robots work in the real world.\n\n\n\n\n\nThese videos show systems level integration.\nDrones: Hardware + Real-time control.\nSoft Robots: Complex modeling + Sensing.\nManipulation: High-speed coordination."
+  },
+  {
     "objectID": "lecture.html#agenda",
     "href": "lecture.html#agenda",
     "title": "Data Science, AI, and ML in Systems Engineering",
@@ -102,6 +123,6 @@
     "href": "lecture.html#qa",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Q&A",
-    "text": "Q&A\n\nDr. Aykut Satici\nDepartment of Systems Engineering\nUniversity of Texas at Dallas\nQuestions?"
+    "text": "Q&A\n\nAykut Satici\nDepartment of Systems Engineering\nUniversity of Texas at Dallas\nQuestions?"
   }
 ]
