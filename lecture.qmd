@@ -1,0 +1,327 @@
+---
+title: "Data Science, AI, and ML in Systems Engineering"
+subtitle: "From Classical Control to Intelligent Systems"
+author: "Dr. Aykut Satici"
+institute: "University of Texas at Dallas"
+department: "Department of Systems Engineering"
+date: last-modified
+logo: images/logo.svg
+format:
+  revealjs:
+    theme: [default, utd.scss]
+    slide-number: true
+    show-slide-number: all
+    transition: fade
+    center: true
+    footer: "Introduction to Systems Engineering | Dr. Satici"
+---
+
+## Agenda
+
+::: columns
+::: {.column width="40%"}
+1.  **The Evolution**
+    *   From Clockwork to Neural Nets.
+2.  **The Concepts**
+    *   DS vs. AI vs. ML.
+3.  **The Lifecycle**
+    *   Where AI fits in the V-Model.
+:::
+
+::: {.column width="40%" style="text-align: right;"}
+4.  **Live Case Study**
+    *   The Furuta Pendulum.
+5.  **The Future**
+    *   Black boxes & Ethics.
+:::
+:::
+
+# Part 1: The Evolution
+
+## Classical vs. Intelligent Systems
+
+::: columns
+::: {.column width="50%"}
+<center>
+**Deterministic**
+![](https://upload.wikimedia.org/wikipedia/commons/a/a9/Deterministic_process.png){height="300"}
+*Predictable. Static.*
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+**Stochastic**
+![](https://upload.wikimedia.org/wikipedia/commons/1/13/Stochastic_process.png){height="300"}
+*Adaptive. Learning.*
+</center>
+:::
+:::
+
+::: notes
+**Script:**
+"Historically, SE was about building clockwork. If I turn gear A, gear B moves.
+Today, we build systems like the Mars Rover. It encounters unknown terrain. We can't pre-program every reaction. It has to learn."
+:::
+
+## Why We Need AI
+
+::: columns
+::: {.column width="50%"}
+![](https://upload.wikimedia.org/wikipedia/commons/3/32/Muxviz_GlobalRisk.png){height="400"}
+:::
+
+::: {.column width="50%"}
+### The Complexity Gap
+*   **Data Volume**: Terabytes/hour.
+*   **Dimensionality**: Systems with 1000+ variables.
+*   **Human Limits**: We cannot manually optimize these anymore.
+:::
+:::
+
+::: notes
+**Script:**
+"Why can't we just write 'if-then' statements? Because modern systems look like this (point to network map). They are too complex for manual analysis."
+:::
+
+# Part 2: The Engineer's Definition
+
+## Disentangling the Buzzwords
+
+<center>
+![](https://upload.wikimedia.org/wikipedia/commons/1/1b/AI_hierarchy.svg){height="450"}
+</center>
+
+::: notes
+**Script:**
+"Let's be precise.
+**AI** is the machine acting smart.
+**ML** is the algorithm learning from data.
+**Deep Learning** is the neural network approach.
+**Data Science** is the analysis of the logs."
+:::
+
+## The Engineering View
+
+::: columns
+::: {.column width="50%"}
+### Classical
+$$ y = f(x) $$
+*We know the physics (F=ma).*
+*We write the equation.*
+:::
+
+::: {.column width="50%"}
+### Machine Learning
+$$ y \approx \hat{f}(x) $$
+*We have the data points.*
+*The computer finds the curve.*
+:::
+:::
+
+<center>
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/640px-Linear_regression.svg.png){height="300"}
+</center>
+
+::: notes
+**Script:**
+"To an engineer, ML is just 'Function Approximation.'
+We have a bunch of dots (data), and we ask the computer to draw the best line through them. That line becomes our law."
+:::
+
+# Part 3: The Lifecycle
+
+## The V-Model and AI
+
+<center>
+![](https://upload.wikimedia.org/wikipedia/commons/9/9b/Systems_Engineering_V_diagram.jpg){height="500"}
+</center>
+
+::: notes
+**Script:**
+"This is the Holy Grail of SE: The V-Model. Think of it as the 'Map of Engineering.'
+
+*   **The Basic V:** We go **down** into the details (Left) and then back **up** into the real world (Right).
+*   **The AI Connection (Dual-Track):** AI is just a subsystem. The V-Model ensures the 'Smart' AI code actually integrates with the 'Real' hardware.
+*   **The Requirement Shift:** Instead of writing rules (If-Then), we design the **Data**. We are engineering the environment the AI learns from.
+*   **The Verification Gap:** We can't test every line of code in a neural network. Verification shifts from 'Does it match logic?' to 'Does it handle the statistical edge cases?'"
+:::
+
+## Operations: The Digital Twin
+
+::: columns
+::: {.column width="50%" style="text-align: center;"}
+![](https://upload.wikimedia.org/wikipedia/commons/3/38/General_Electric_GEnx_on_747-8I_prototype.jpg){height="350"}
+
+**Physical Asset**
+:::
+
+::: {.column width="50%" style="text-align: center;"}
+![](https://upload.wikimedia.org/wikipedia/commons/7/75/Turbofan_operation.svg){height="350"}
+
+**Digital Replica**
+:::
+:::
+
+::: notes
+**Script:**
+"We build a Digital Twin. The physical engine sends data to the digital one. The digital one uses ML to predict failures before they happen."
+:::
+
+# Part 4: Live Case Study {background-color="#154734"}
+
+## The Furuta Pendulum
+
+::: columns
+::: {.column width="50%"}
+*   **Goal**: Balance upright.
+*   **Actuator**: Base Motor.
+*   **Sensor**: Encoders.
+:::
+
+::: {.column width="50%"}
+<!-- Use your local image here if available, otherwise this wiki one works -->
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Rotary_inverted_pendulum.jpg/440px-Rotary_inverted_pendulum.jpg){height="400"}
+:::
+:::
+
+::: notes
+**Script:**
+(Walk to the table)
+"Here it is. The Furuta Pendulum.
+It has a motor, an arm, and a pendulum.
+It looks like a system. But is it?"
+:::
+
+## The Integration Gap
+
+<center>
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Artificial_neural_network.svg/640px-Artificial_neural_network.svg.png){height="300"}
+</center>
+
+*   **Hardware**: Assembled (Physical).
+*   **Software**: Neural Network (Code).
+*   **Status**: <span style="color:red">**Not Working (Yet).**</span>
+
+::: notes
+**Script:**
+"Right now, this isn't working.
+The hardware is here. The AI code is on my laptop.
+But the **Interface** is missing. Systems Engineering is about connecting these two."
+:::
+
+## How AI Learns to Control
+
+::: columns
+::: {.column width="60%"}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Reinforcement_learning_diagram.svg/640px-Reinforcement_learning_diagram.svg.png){height="350"}
+:::
+
+::: {.column width="40%"}
+**Reinforcement Learning**
+
+1.  **Observe** state.
+2.  **Take Action** (Voltage).
+3.  **Get Reward** (+1 if upright).
+:::
+:::
+
+::: notes
+**Script:**
+"We use Reinforcement Learning.
+The AI tries random things. It fails. It learns. Eventually, it masters the physics."
+:::
+
+## Sim2Real: The Reality Check
+
+::: columns
+::: {.column width="50%" style="text-align: center;"}
+**Simulation**
+
+![](https://upload.wikimedia.org/wikipedia/commons/1/1b/Reinforcement_learning_diagram.svg){height="300"}
+
+*Perfect Math*
+:::
+
+::: {.column width="50%" style="text-align: center;"}
+**Reality**
+
+![](https://upload.wikimedia.org/wikipedia/commons/f/f0/RotaryInvertedPendulum.JPG){height="300" style="filter: blur(1px) contrast(120%);"}
+
+*Noise & Friction*
+:::
+:::
+
+::: notes
+**Script:**
+"We train in simulation (perfect).
+We deploy to reality (messy).
+If the model overfits, the robot crashes. We need Robust Control."
+:::
+
+# Part 5: The Future
+
+## The Black Box Problem
+
+::: columns
+::: {.column width="50%"}
+### Classical Code
+`IF speed > 50 THEN brake`
+*(Traceable)*
+:::
+
+::: {.column width="50%"}
+### Neural Network
+`0.23 * x1 + 0.99 * x2 ...`
+*(Opaque)*
+:::
+:::
+
+<center>
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colored_neural_network.svg/640px-Colored_neural_network.svg.png){height="300"}
+</center>
+
+::: notes
+**Script:**
+"Traditional code is readable.
+Neural networks are millions of opaque numbers.
+Traceability is a massive open problem in SE."
+:::
+
+## Ethics & Responsibility
+
+<center>
+![](https://upload.wikimedia.org/wikipedia/commons/f/fd/Trolley_Problem.svg){height="400"}
+</center>
+
+::: notes
+**Script:**
+"If an autonomous car hits a pedestrian to save the passenger, who is responsible?
+As we build autonomous systems, we are engineering moral agents."
+:::
+
+# Conclusion
+
+## Summary
+
+::: columns
+::: {.column width="30%"}
+![](https://upload.wikimedia.org/wikipedia/commons/1/18/Gears-solid.svg){height="200"}
+:::
+
+::: {.column width="70%"}
+1.  **Systems are changing**: From static to dynamic.
+2.  **Tools**: Python/MATLAB + Control Theory.
+3.  **Mindset**: AI is just a subsystem. Integration is key.
+:::
+:::
+
+## Q&A
+
+<center>
+**Dr. Aykut Satici** \
+*Department of Systems Engineering* \
+*University of Texas at Dallas*
+
+*Questions?*
+</center>

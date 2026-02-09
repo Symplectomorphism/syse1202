@@ -1,0 +1,67 @@
+/*-- scss:defaults --*/
+
+// UTD Color Palette
+$utd-orange: #E87500;
+$utd-green: #154734;
+$utd-slate: #333333;
+$utd-light-gray: #f2f2f2;
+
+// Override Standard Reveal.js Variables
+$body-bg: #ffffff;
+$body-color: $utd-slate;
+$presentation-heading-color: $utd-green;
+$presentation-heading-font: "Arial", sans-serif;
+$presentation-font: "Arial", sans-serif;
+$link-color: $utd-orange;
+$selection-bg: $utd-orange;
+$code-block-bg: $utd-light-gray;
+
+/*-- scss:rules --*/
+
+// Title Slide Specifics
+.reveal .title-slide h1 {
+    color: $utd-orange;
+    font-weight: bold;
+    border-bottom: 3px solid $utd-green;
+    padding-bottom: 20px;
+}
+
+.reveal .title-slide h2 {
+    color: $utd-green;
+}
+
+// General Slide Headings
+.reveal h2,
+.reveal h3 {
+    color: $utd-green;
+}
+
+// Blockquotes (for Definitions and Key Takeaways)
+.reveal blockquote {
+    border-left: 5px solid $utd-orange;
+    background: rgba(232, 117, 0, 0.1);
+    padding: 20px;
+    font-style: italic;
+    width: 90%;
+}
+
+// Progress Bar Color
+.reveal .progress span {
+    background-color: $utd-orange !important;
+}
+
+// Slide Numbers
+.reveal .slide-number {
+    color: $utd-green;
+    font-weight: bold;
+}
+
+// Fix for dense lists (like Agenda)
+.reveal ul li {
+    margin-bottom: 0.2em; // Reduces space between list items
+}
+
+// Optional: specific class for small text
+.small-text {
+    font-size: 0.8em !important;
+}
