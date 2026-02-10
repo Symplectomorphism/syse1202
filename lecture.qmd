@@ -29,7 +29,7 @@ format:
 :::
 
 ::: {.column width="48%"}
-![](images/sabanci_team.jpg){height="230" fig-align="center"} \
+![](images/sabanci_team.jpg){height="230" fig-align="center"}
 ![](images/spong-lab-650-2013-08.jpg){height="230" fig-align="center"}
 :::
 
@@ -60,7 +60,7 @@ format:
 {{< video videos/astria.mp4 autoplay="true" loop="true" muted="true" >}}
 :::
 
-![](images/rimless_wheel.webp){width="50%" fig-align="center"}
+![](images/rimless_wheel_fixed.jpg){width="50%" fig-align="center"}
 :::
 
 ::::
@@ -136,13 +136,13 @@ Systems Engineering connects **Control Theory**, **Embedded Systems**, and **Mec
 ::: columns
 ::: {.column width="50%"}
 **Deterministic**
-![](https://upload.wikimedia.org/wikipedia/commons/a/a9/Deterministic_process.png){height="300" fig-align="center"}
+![](images/deterministic.jpg){height="300" fig-align="center"}
 *Predictable. Static.*
 :::
 
 ::: {.column width="50%"}
 **Stochastic**
-![](https://upload.wikimedia.org/wikipedia/commons/1/13/Stochastic_process.png){height="300" fig-align="center"}
+![](images/stochastic.jpg){height="300" fig-align="center"}
 *Adaptive. Learning.*
 :::
 :::

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.2.9)  10 FEB 2026 05:39
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.2.9)  10 FEB 2026 05:53
  restricted system commands enabled.
 **lecture.tex
 (./lecture.tex
@@ -1777,26 +1777,40 @@ File: images/sabanci_team.jpg Graphic file (type jpg)
 <use images/sabanci_team.jpg>
 Package luatex.def Info: images/sabanci_team.jpg  used on input line 216.
 (luatex.def)             Requested size: 282.12094pt x 173.14719pt.
+<images/spong-lab-650-2013-08.jpg, id=8, 156.585pt x 129.1224pt>
+File: images/spong-lab-650-2013-08.jpg Graphic file (type jpg)
+<use images/spong-lab-650-2013-08.jpg>
+Package luatex.def Info: images/spong-lab-650-2013-08.jpg  used on input line 2
+19.
+(luatex.def)             Requested size: 209.99243pt x 173.163pt.
+[1
 
-! LaTeX Error: There's no line here to end.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.219 \begin
-          {center}
-
-Here is how much of LuaTeX's memory you used:
- 41849 strings out of 476076
- 100000,1648299 words of node,token memory allocated
- 6832 words of node memory still in use:
-   49 hlist, 2 vlist, 4 rule, 45 disc, 12 local_par, 1 dir, 2 math, 195 glue, 30
- kern, 41 penalty, 4 margin_kern, 430 glyph, 139 attribute, 65 glue_spec, 139 at
-tribute_list, 1 if_stack, 6 write, 3 pdf_dest, 21 pdf_colorstack, 1 pdf_setmatri
-x, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:3,2:7,3:1,4:2,5:18,6:2,7:2,8:1,9:1,10:8,12:1
- 63482 multiletter control sequences out of 65536+600000
- 62 fonts using 19040679 bytes
- 108i,6n,114p,11228b,1126s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/home/icute/Applications/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.
+map}<./images/sabanci_team.jpg>]
+<images/rimless_wheel_fixed.jpg, id=22, 401.5pt x 301.125pt>
+File: images/rimless_wheel_fixed.jpg Graphic file (type jpg)
+<use images/rimless_wheel_fixed.jpg>
+Package luatex.def Info: images/rimless_wheel_fixed.jpg  used on input line 266
+.
+(luatex.def)             Requested size: 223.3865pt x 167.53987pt.
+[2<./images/spong-lab-650-2013-08.jpg><./images/rimless_wheel_fixed.jpg>]
+(/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/microtype/mt-TU-emp
+ty.cfg
+File: mt-TU-empty.cfg 2021/06/22 v1.1 microtype config. file: fonts with nonsta
+ndard glyph set (RS)
+) [3]
+<images/deterministic.jpg, id=46, 1124.2pt x 843.15pt>
+File: images/deterministic.jpg Graphic file (type jpg)
+<use images/deterministic.jpg>
+Package luatex.def Info: images/deterministic.jpg  used on input line 367.
+(luatex.def)             Requested size: 301.11935pt x 225.83951pt.
+<images/stochastic.jpg, id=47, 877.2775pt x 699.61375pt>
+File: images/stochastic.jpg Graphic file (type jpg)
+<use images/stochastic.jpg>
+Package luatex.def Info: images/stochastic.jpg  used on input line 372.
+(luatex.def)             Requested size: 283.1842pt x 225.83453pt.
+[4<./images/deterministic.jpg>]
+! error:  (file lecture_files/mediabag/Muxviz_GlobalRisk.png) (readpng): interna
+l error
 !  ==> Fatal error occurred, no output PDF file produced!
