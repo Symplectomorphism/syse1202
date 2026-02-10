@@ -84,27 +84,6 @@
     "text": "Rimless Wheel: Robustness\n\n\n\nSystems Goal: Walking that doesn’t fall when the ground changes.\nNon-examples:\n\nFalling over (unstable).\nTripping on uneven ground (fragile).\n\nExamples:\n\nSteady rhythm on flat ground.\nRobustness: Recovering from uneven terrain.\n\n\n\nNon-examples (Not Working)\n\n\n\n\n\n\n\n\n\n\n\nExamples (Working Well)"
   },
   {
-    "objectID": "lecture.html#the-furuta-pendulum",
-    "href": "lecture.html#the-furuta-pendulum",
-    "title": "Data Science, AI, and ML in Systems Engineering",
-    "section": "The Furuta Pendulum",
-    "text": "The Furuta Pendulum\n\n\n\nGoal: Balance upright.\nActuator: Base Motor.\nSensor: Encoders.\n\n\n\n\n\n\nScript: (Walk to the table) “Here it is. The Furuta Pendulum. It has a motor, an arm, and a pendulum. It looks like a system. But is it?”"
-  },
-  {
-    "objectID": "lecture.html#the-integration-gap",
-    "href": "lecture.html#the-integration-gap",
-    "title": "Data Science, AI, and ML in Systems Engineering",
-    "section": "The Integration Gap",
-    "text": "The Integration Gap\n\n\n\n\nHardware: Assembled (Physical).\nSoftware: Neural Network (Code).\nStatus: Not Working (Yet).\n\n\nScript: “Right now, this isn’t working. The hardware is here. The AI code is on my laptop. But the Interface is missing. Systems Engineering is about connecting these two.”"
-  },
-  {
-    "objectID": "lecture.html#learning-to-walk-rl-in-action",
-    "href": "lecture.html#learning-to-walk-rl-in-action",
-    "title": "Data Science, AI, and ML in Systems Engineering",
-    "section": "Learning to Walk: RL in Action",
-    "text": "Learning to Walk: RL in Action\n\n\n\nThe Goal: Make the robot walk forward.\nThe Process:\n\nStart with zero knowledge.\nTry random actions.\nGet rewarded for forward motion.\nResult: Emergent walking behavior."
-  },
-  {
     "objectID": "lecture.html#how-ai-learns-to-control",
     "href": "lecture.html#how-ai-learns-to-control",
     "title": "Data Science, AI, and ML in Systems Engineering",
@@ -117,6 +96,27 @@
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Sim2Real: The Reality Check",
     "text": "Sim2Real: The Reality Check\n\n\nSimulation\n\nPerfect Math\n\nReality\n\nNoise & Friction\n\n\nScript: “We train in simulation (perfect). We deploy to reality (messy). If the model overfits, the robot crashes. We need Robust Control.”"
+  },
+  {
+    "objectID": "lecture.html#learning-to-walk-rl-in-action",
+    "href": "lecture.html#learning-to-walk-rl-in-action",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Learning to Walk: RL in Action",
+    "text": "Learning to Walk: RL in Action\n\n\n\nThe Goal: Make the robot walk forward.\nThe Process:\n\nStart with zero knowledge.\nTry random actions.\nGet rewarded for forward motion.\nResult: Emergent walking behavior."
+  },
+  {
+    "objectID": "lecture.html#the-furuta-pendulum",
+    "href": "lecture.html#the-furuta-pendulum",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "The Furuta Pendulum",
+    "text": "The Furuta Pendulum\n\n\n\nGoal: Balance upright.\nActuator: Base Motor.\nSensor: Encoders.\n\n\n\n\n\n\nScript: (Walk to the table) “Here it is. The Furuta Pendulum. It has a motor, an arm, and a pendulum. It looks like a system. But is it?”"
+  },
+  {
+    "objectID": "lecture.html#integration-the-furuta-pendulum",
+    "href": "lecture.html#integration-the-furuta-pendulum",
+    "title": "Data Science, AI, and ML in Systems Engineering",
+    "section": "Integration: The Furuta Pendulum",
+    "text": "Integration: The Furuta Pendulum\n\n\n\nController Architecture \n\n\n\nPerformance (Pre-Move) \n\n\n\nHardware: Assembled (Physical).\nController: Neural Network (Code).\nVideo shows successful operation from Boise State lab.\n\n\nScript: “Here is the plan. On the left, we have the Neural Network controller (the brain). On the right, we have the video of it working perfectly in my previous lab. Currently, due to the move, the hardware and software are disconnected. That is the Integration Gap we need to solve.”"
   },
   {
     "objectID": "lecture.html#the-black-box-problem",

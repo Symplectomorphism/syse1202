@@ -555,75 +555,6 @@ Aykut C. Satici
 <h1>Part 4: Live Case Study</h1>
 
 </section>
-<section id="the-furuta-pendulum" class="slide level2 center">
-<h2>The Furuta Pendulum</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><strong>Goal</strong>: Balance upright.</li>
-<li><strong>Actuator</strong>: Base Motor.</li>
-<li><strong>Sensor</strong>: Encoders.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<!-- Use your local image here if available, otherwise this wiki one works -->
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Rotary_inverted_pendulum.jpg/440px-Rotary_inverted_pendulum.jpg" height="400"></p>
-</div></div>
-<aside class="notes">
-<p><strong>Script:</strong> (Walk to the table) “Here it is. The Furuta Pendulum. It has a motor, an arm, and a pendulum. It looks like a system. But is it?”</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="the-integration-gap" class="slide level2 center">
-<h2>The Integration Gap</h2>
-<center>
-<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Artificial_neural_network.svg/640px-Artificial_neural_network.svg.png" height="300">
-</center>
-<ul>
-<li><strong>Hardware</strong>: Assembled (Physical).</li>
-<li><strong>Software</strong>: Neural Network (Code).</li>
-<li><strong>Status</strong>: <span style="color:red"><strong>Not Working (Yet).</strong></span></li>
-</ul>
-<aside class="notes">
-<p><strong>Script:</strong> “Right now, this isn’t working. The hardware is here. The AI code is on my laptop. But the <strong>Interface</strong> is missing. Systems Engineering is about connecting these two.”</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="learning-to-walk-rl-in-action" class="slide level2 smaller center">
-<h2>Learning to Walk: RL in Action</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<ul>
-<li><strong>The Goal</strong>: Make the robot walk forward.</li>
-<li><strong>The Process</strong>:
-<ul>
-<li>Start with zero knowledge.</li>
-<li>Try random actions.</li>
-<li>Get rewarded for forward motion.</li>
-<li><strong>Result</strong>: Emergent walking behavior.</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:60%;">
-<video id="video_shortcode_videojs_video12" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/walking_RL.mp4"></video>
-</div></div>
-</section>
 <section id="how-ai-learns-to-control" class="slide level2 center">
 <h2>How AI Learns to Control</h2>
 <div class="columns">
@@ -665,6 +596,82 @@ Aykut C. Satici
 </div></div>
 <aside class="notes">
 <p><strong>Script:</strong> “We train in simulation (perfect). We deploy to reality (messy). If the model overfits, the robot crashes. We need Robust Control.”</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="learning-to-walk-rl-in-action" class="slide level2 smaller center">
+<h2>Learning to Walk: RL in Action</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li><strong>The Goal</strong>: Make the robot walk forward.</li>
+<li><strong>The Process</strong>:
+<ul>
+<li>Start with zero knowledge.</li>
+<li>Try random actions.</li>
+<li>Get rewarded for forward motion.</li>
+<li><strong>Result</strong>: Emergent walking behavior.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<video id="video_shortcode_videojs_video12" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/walking_RL.mp4"></video>
+</div></div>
+</section>
+<section id="the-furuta-pendulum" class="slide level2 center">
+<h2>The Furuta Pendulum</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>Goal</strong>: Balance upright.</li>
+<li><strong>Actuator</strong>: Base Motor.</li>
+<li><strong>Sensor</strong>: Encoders.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<!-- Use your local image here if available, otherwise this wiki one works -->
+<p><img data-src="images/furuta.jpg" height="400"></p>
+</div></div>
+<aside class="notes">
+<p><strong>Script:</strong> (Walk to the table) “Here it is. The Furuta Pendulum. It has a motor, an arm, and a pendulum. It looks like a system. But is it?”</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="integration-the-furuta-pendulum" class="slide level2 smaller center">
+<h2>Integration: The Furuta Pendulum</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<center>
+<strong>Controller Architecture</strong> <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Artificial_neural_network.svg/640px-Artificial_neural_network.svg.png" height="400">
+</center>
+</div><div class="column" style="width:50%;">
+<center>
+<strong>Performance (Pre-Move)</strong> <video id="video_shortcode_videojs_video13" height="400" class="video-js vjs-default-skin " controls="" preload="auto" data-setup="{}" title=""><source src="videos/furuta.mp4"></video>
+</center>
+</div></div>
+<ul>
+<li><strong>Hardware</strong>: Assembled (Physical).</li>
+<li><strong>Controller</strong>: Neural Network (Code).</li>
+<li><em>Video shows successful operation from Boise State lab.</em></li>
+</ul>
+<aside class="notes">
+<p><strong>Script:</strong> “Here is the plan. On the left, we have the Neural Network controller (the brain). On the right, we have the video of it working perfectly in my previous lab. Currently, due to the move, the hardware and software are disconnected. That is the <strong>Integration Gap</strong> we need to solve.”</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1153,6 +1160,7 @@ Aykut C. Satici
     <script>videojs(video_shortcode_videojs_video10);</script>
     <script>videojs(video_shortcode_videojs_video11);</script>
     <script>videojs(video_shortcode_videojs_video12);</script>
+    <script>videojs(video_shortcode_videojs_video13);</script>
     
 
 </body></html>

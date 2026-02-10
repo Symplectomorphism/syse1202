@@ -321,65 +321,6 @@ We have a bunch of dots (data), and we ask the computer to draw the best line th
 
 # Part 4: Live Case Study {background-color="#154734"}
 
-## The Furuta Pendulum
-
-::: columns
-::: {.column width="50%"}
-*   **Goal**: Balance upright.
-*   **Actuator**: Base Motor.
-*   **Sensor**: Encoders.
-:::
-
-::: {.column width="50%"}
-<!-- Use your local image here if available, otherwise this wiki one works -->
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Rotary_inverted_pendulum.jpg/440px-Rotary_inverted_pendulum.jpg){height="400"}
-:::
-:::
-
-::: notes
-**Script:**
-(Walk to the table)
-"Here it is. The Furuta Pendulum.
-It has a motor, an arm, and a pendulum.
-It looks like a system. But is it?"
-:::
-
-## The Integration Gap
-
-<center>
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Artificial_neural_network.svg/640px-Artificial_neural_network.svg.png){height="300"}
-</center>
-
-*   **Hardware**: Assembled (Physical).
-*   **Software**: Neural Network (Code).
-*   **Status**: <span style="color:red">**Not Working (Yet).**</span>
-
-::: notes
-**Script:**
-"Right now, this isn't working.
-The hardware is here. The AI code is on my laptop.
-But the **Interface** is missing. Systems Engineering is about connecting these two."
-:::
-
-## Learning to Walk: RL in Action {.smaller}
-
-:::: {.columns}
-
-::: {.column width="40%"}
-*   **The Goal**: Make the robot walk forward.
-*   **The Process**:
-    *   Start with zero knowledge.
-    *   Try random actions.
-    *   Get rewarded for forward motion.
-    *   **Result**: Emergent walking behavior.
-:::
-
-::: {.column width="60%"}
-{{< video videos/walking_RL.mp4 autoplay="true" loop="true" muted="true" >}}
-:::
-
-::::
-
 ## How AI Learns to Control
 
 ::: columns
@@ -428,6 +369,82 @@ The AI tries random things. It fails. It learns. Eventually, it masters the phys
 We deploy to reality (messy).
 If the model overfits, the robot crashes. We need Robust Control."
 :::
+
+## Learning to Walk: RL in Action {.smaller}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+*   **The Goal**: Make the robot walk forward.
+*   **The Process**:
+    *   Start with zero knowledge.
+    *   Try random actions.
+    *   Get rewarded for forward motion.
+    *   **Result**: Emergent walking behavior.
+:::
+
+::: {.column width="60%"}
+{{< video videos/walking_RL.mp4 autoplay="true" loop="true" muted="true" >}}
+:::
+
+::::
+
+
+## The Furuta Pendulum
+
+::: columns
+::: {.column width="50%"}
+*   **Goal**: Balance upright.
+*   **Actuator**: Base Motor.
+*   **Sensor**: Encoders.
+:::
+
+::: {.column width="50%"}
+<!-- Use your local image here if available, otherwise this wiki one works -->
+![](images/furuta.jpg){height="400"}
+:::
+:::
+
+::: notes
+**Script:**
+(Walk to the table)
+"Here it is. The Furuta Pendulum.
+It has a motor, an arm, and a pendulum.
+It looks like a system. But is it?"
+:::
+
+## Integration: The Furuta Pendulum {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<center>
+**Controller Architecture**
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Artificial_neural_network.svg/640px-Artificial_neural_network.svg.png){height="400"}
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+**Performance (Pre-Move)**
+{{< video videos/furuta.mp4 height="400" autoplay="true" loop="true" muted="true" >}}
+</center>
+:::
+
+::::
+
+*   **Hardware**: Assembled (Physical).
+*   **Controller**: Neural Network (Code).
+*   *Video shows successful operation from Boise State lab.*
+
+::: notes
+**Script:**
+"Here is the plan.
+On the left, we have the Neural Network controller (the brain).
+On the right, we have the video of it working perfectly in my previous lab.
+Currently, due to the move, the hardware and software are disconnected. That is the **Integration Gap** we need to solve."
+:::
+
 
 # Part 5: The Future
 
