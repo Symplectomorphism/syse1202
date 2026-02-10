@@ -60,9 +60,7 @@ format:
 {{< video videos/astria.mp4 autoplay="true" loop="true" muted="true" >}}
 :::
 
-<center>
-![](images/rimless_wheel.webp){width="50%"}
-</center>
+![](images/rimless_wheel.webp){width="50%" fig-align="center"}
 :::
 
 ::::
@@ -78,18 +76,24 @@ format:
 :::: {.columns}
 
 ::: {.column width="33%"}
-<center>**Drones**</center>
+::: {.center}
+**Drones**
 {{< video videos/quadrotor_lissajous.mp4 aspect-ratio=4x3 width="300" autoplay="true" loop="true" muted="true" >}}
 :::
-
-::: {.column width="33%"}
-<center>**Soft Juggling**</center>
-{{< video videos/soft_juggler.mp4 aspect-ratio=4x3 width="300" autoplay="true" loop="true" muted="true" >}}
 :::
 
 ::: {.column width="33%"}
-<center>**Manipulation**</center>
+::: {.center}
+**Soft Juggling**
+{{< video videos/soft_juggler.mp4 aspect-ratio=4x3 width="300" autoplay="true" loop="true" muted="true" >}}
+:::
+:::
+
+::: {.column width="33%"}
+::: {.center}
+**Manipulation**
 {{< video videos/pizza_tossing.mp4 aspect-ratio=4x3 width="300" autoplay="true" loop="true" muted="true" >}}
+:::
 :::
 
 ::::
@@ -131,19 +135,15 @@ Systems Engineering connects **Control Theory**, **Embedded Systems**, and **Mec
 
 ::: columns
 ::: {.column width="50%"}
-<center>
 **Deterministic**
-![](https://upload.wikimedia.org/wikipedia/commons/a/a9/Deterministic_process.png){height="300"}
+![](https://upload.wikimedia.org/wikipedia/commons/a/a9/Deterministic_process.png){height="300" fig-align="center"}
 *Predictable. Static.*
-</center>
 :::
 
 ::: {.column width="50%"}
-<center>
 **Stochastic**
-![](https://upload.wikimedia.org/wikipedia/commons/1/13/Stochastic_process.png){height="300"}
+![](https://upload.wikimedia.org/wikipedia/commons/1/13/Stochastic_process.png){height="300" fig-align="center"}
 *Adaptive. Learning.*
-</center>
 :::
 :::
 
@@ -177,9 +177,7 @@ Today, we build systems like the Mars Rover. It encounters unknown terrain. We c
 
 ## Disentangling the Buzzwords
 
-<center>
-![](https://upload.wikimedia.org/wikipedia/commons/1/1b/AI_hierarchy.svg){height="450"}
-</center>
+![](https://upload.wikimedia.org/wikipedia/commons/1/1b/AI_hierarchy.svg){height="450" fig-align="center"}
 
 ::: notes
 **Script:**
@@ -208,9 +206,7 @@ $$ y \approx \hat{f}(x) $$
 :::
 :::
 
-<center>
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/640px-Linear_regression.svg.png){height="300"}
-</center>
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/640px-Linear_regression.svg.png){height="300" fig-align="center"}
 
 ::: notes
 **Script:**
@@ -222,9 +218,7 @@ We have a bunch of dots (data), and we ask the computer to draw the best line th
 
 ## The V-Model and AI
 
-<center>
-![](https://upload.wikimedia.org/wikipedia/commons/9/9b/Systems_Engineering_V_diagram.jpg){height="500"}
-</center>
+![](https://upload.wikimedia.org/wikipedia/commons/9/9b/Systems_Engineering_V_diagram.jpg){height="500" fig-align="center"}
 
 ::: notes
 **Script:**
@@ -273,7 +267,7 @@ We have a bunch of dots (data), and we ask the computer to draw the best line th
 
 {{< video videos/unclamped_then_clamped.mp4 autoplay="true" loop="true" muted="true" >}}
 :::
-<center>**Real-world (Left) vs. Sim2Real Replica (Right)**</center>
+*Real-world (Left) vs. Sim2Real Replica (Right)*
 :::
 
 ::::
@@ -418,24 +412,25 @@ It looks like a system. But is it?"
 :::: {.columns}
 
 ::: {.column width="50%"}
-<center>
+::: {.center}
 **Controller Architecture**
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Artificial_neural_network.svg/640px-Artificial_neural_network.svg.png){height="400"}
-</center>
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Artificial_neural_network.svg/640px-Artificial_neural_network.svg.png){height="400" fig-align="center"}
+:::
 :::
 
 ::: {.column width="50%"}
-<center>
+::: {.center}
 **Performance (Pre-Move)**
 {{< video videos/furuta.mp4 height="400" autoplay="true" loop="true" muted="true" >}}
-</center>
+:::
 :::
 
 ::::
 
 *   **Hardware**: Assembled (Physical).
 *   **Controller**: Neural Network (Code).
-*   *Video shows successful operation from Boise State lab.*
+*   **Current Status**: <span style="color:orange">**Broken (Moved to Dallas).**</span>
+    *   *Video shows successful operation from Boise State lab.*
 
 ::: notes
 **Script:**
@@ -464,9 +459,7 @@ Currently, due to the move, the hardware and software are disconnected. That is 
 :::
 :::
 
-<center>
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colored_neural_network.svg/640px-Colored_neural_network.svg.png){height="300"}
-</center>
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colored_neural_network.svg/640px-Colored_neural_network.svg.png){height="300" fig-align="center"}
 
 ::: notes
 **Script:**
@@ -475,11 +468,9 @@ Neural networks are millions of opaque numbers.
 Traceability is a massive open problem in SE."
 :::
 
-## Ethics & Responsibility
+## The Ethics of AI
 
-<center>
-![](https://upload.wikimedia.org/wikipedia/commons/f/fd/Trolley_Problem.svg){height="400"}
-</center>
+![](https://upload.wikimedia.org/wikipedia/commons/f/fd/Trolley_Problem.svg){height="400" fig-align="center"}
 
 ::: notes
 **Script:**
@@ -503,12 +494,15 @@ As we build autonomous systems, we are engineering moral agents."
 :::
 :::
 
-## Q&A
+## Questions?
 
-<center>
-**Aykut Satici** \
+::: {style="text-align: center"}
+**Thank you!**
+
+*Aykut C. Satici*
+
 *Department of Systems Engineering* \
 *University of Texas at Dallas*
 
 *Questions?*
-</center>
+:::

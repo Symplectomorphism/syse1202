@@ -11,14 +11,14 @@
     "href": "lecture.html#bsu-locomotion-contact",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "BSU: Locomotion & Contact",
-    "text": "BSU: Locomotion & Contact\n\n\n\nThe Problem: Robots struggle with uneven terrain and physical collisions.\nThe Solutions:\n\nRimless Wheel: Stability of passive walking.\nAstria: Drone/power-line interaction.\nIWP: Energy-shaping control for acrobatics.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAt BSU, I worked on the challenge of “contact.” Most robots are afraid of touching things too hard.\nWe used Systems Engineering to design controllers that handle these impacts gracefully."
+    "text": "BSU: Locomotion & Contact\n\n\n\nThe Problem: Robots struggle with uneven terrain and physical collisions.\nThe Solutions:\n\nRimless Wheel: Stability of passive walking.\nAstria: Drone/power-line interaction.\nIWP: Energy-shaping control for acrobatics.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAt BSU, I worked on the challenge of “contact.” Most robots are afraid of touching things too hard.\nWe used Systems Engineering to design controllers that handle these impacts gracefully."
   },
   {
     "objectID": "lecture.html#systems-engineering-in-action",
     "href": "lecture.html#systems-engineering-in-action",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Systems Engineering in Action",
-    "text": "Systems Engineering in Action\n\n\n\nDrones\n\n\n\n\nSoft Juggling\n\n\n\n\nManipulation\n\n\n\n\n\n\n\n\n\nNote\n\n\nSystems Engineering connects Control Theory, Embedded Systems, and Mechanical Design to make these robots work in the real world.\n\n\n\n\n\nThese videos show systems level integration.\nDrones: Hardware + Real-time control.\nSoft Robots: Complex modeling + Sensing.\nManipulation: High-speed coordination."
+    "text": "Systems Engineering in Action\n\n\n\nDrones \n\n\n\nSoft Juggling \n\n\n\nManipulation \n\n\n\n\n\n\n\n\nNote\n\n\nSystems Engineering connects Control Theory, Embedded Systems, and Mechanical Design to make these robots work in the real world.\n\n\n\n\n\nThese videos show systems level integration.\nDrones: Hardware + Real-time control.\nSoft Robots: Complex modeling + Sensing.\nManipulation: High-speed coordination."
   },
   {
     "objectID": "lecture.html#agenda",
@@ -32,7 +32,7 @@
     "href": "lecture.html#classical-vs.-intelligent-systems",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Classical vs. Intelligent Systems",
-    "text": "Classical vs. Intelligent Systems\n\n\n\nDeterministic  Predictable. Static.\n\n\n\nStochastic  Adaptive. Learning.\n\n\n\nScript: “Historically, SE was about building clockwork. If I turn gear A, gear B moves. Today, we build systems like the Mars Rover. It encounters unknown terrain. We can’t pre-program every reaction. It has to learn.”"
+    "text": "Classical vs. Intelligent Systems\n\n\nDeterministic  Predictable. Static.\n\nStochastic  Adaptive. Learning.\n\n\nScript: “Historically, SE was about building clockwork. If I turn gear A, gear B moves. Today, we build systems like the Mars Rover. It encounters unknown terrain. We can’t pre-program every reaction. It has to learn.”"
   },
   {
     "objectID": "lecture.html#why-we-need-ai",
@@ -46,21 +46,21 @@
     "href": "lecture.html#disentangling-the-buzzwords",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Disentangling the Buzzwords",
-    "text": "Disentangling the Buzzwords\n\n\n\n\nScript: “Let’s be precise. AI is the machine acting smart. ML is the algorithm learning from data. Deep Learning is the neural network approach. Data Science is the analysis of the logs.”"
+    "text": "Disentangling the Buzzwords\n\n\n\n\n\n\nScript: “Let’s be precise. AI is the machine acting smart. ML is the algorithm learning from data. Deep Learning is the neural network approach. Data Science is the analysis of the logs.”"
   },
   {
     "objectID": "lecture.html#the-engineering-view",
     "href": "lecture.html#the-engineering-view",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "The Engineering View",
-    "text": "The Engineering View\n\n\nClassical\n\\[ y = f(x) \\] We know the physics (F=ma). We write the equation.\n\nMachine Learning\n\\[ y \\approx \\hat{f}(x) \\] We have the data points. The computer finds the curve.\n\n\n\n\n\nScript: “To an engineer, ML is just ‘Function Approximation.’ We have a bunch of dots (data), and we ask the computer to draw the best line through them. That line becomes our law.”"
+    "text": "The Engineering View\n\n\nClassical\n\\[ y = f(x) \\] We know the physics (F=ma). We write the equation.\n\nMachine Learning\n\\[ y \\approx \\hat{f}(x) \\] We have the data points. The computer finds the curve.\n\n\n\n\n\n\n\nScript: “To an engineer, ML is just ‘Function Approximation.’ We have a bunch of dots (data), and we ask the computer to draw the best line through them. That line becomes our law.”"
   },
   {
     "objectID": "lecture.html#the-v-model-and-ai",
     "href": "lecture.html#the-v-model-and-ai",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "The V-Model and AI",
-    "text": "The V-Model and AI\n\n\n\n\nScript: “This is the Holy Grail of SE: The V-Model. Think of it as the ‘Map of Engineering.’\n\nThe Basic V: We go down into the details (Left) and then back up into the real world (Right).\nThe AI Connection (Dual-Track): AI is just a subsystem. The V-Model ensures the ‘Smart’ AI code actually integrates with the ‘Real’ hardware.\nThe Requirement Shift: Instead of writing rules (If-Then), we design the Data. We are engineering the environment the AI learns from.\nThe Verification Gap: We can’t test every line of code in a neural network. Verification shifts from ‘Does it match logic?’ to ‘Does it handle the statistical edge cases?’”"
+    "text": "The V-Model and AI\n\n\n\n\n\n\nScript: “This is the Holy Grail of SE: The V-Model. Think of it as the ‘Map of Engineering.’\n\nThe Basic V: We go down into the details (Left) and then back up into the real world (Right).\nThe AI Connection (Dual-Track): AI is just a subsystem. The V-Model ensures the ‘Smart’ AI code actually integrates with the ‘Real’ hardware.\nThe Requirement Shift: Instead of writing rules (If-Then), we design the Data. We are engineering the environment the AI learns from.\nThe Verification Gap: We can’t test every line of code in a neural network. Verification shifts from ‘Does it match logic?’ to ‘Does it handle the statistical edge cases?’”"
   },
   {
     "objectID": "lecture.html#operations-the-digital-twin",
@@ -74,7 +74,7 @@
     "href": "lecture.html#astria-digital-twin",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Astria: Digital Twin",
-    "text": "Astria: Digital Twin\n\n\n\nThe Physical Asset: Autonomous drone with a gripper.\nThe Digital Replica: High-fidelity physics-based simulation.\nSystems Goal: Testing contact physics and control logic virtually before risking expensive hardware on power lines.\n\n\n\n\n\n\n\n\n\n\n\n\n\nReal-world (Left) vs. Sim2Real Replica (Right)\n\n\n\nScript: “Here is a concrete example from our research. We have the physical Astria drone, and we have its high-fidelity digital replica. Before we fly near high-voltage lines, we test every control algorithm in the digital twin to ensure the system behaves as expected.”"
+    "text": "Astria: Digital Twin\n\n\n\nThe Physical Asset: Autonomous drone with a gripper.\nThe Digital Replica: High-fidelity physics-based simulation.\nSystems Goal: Testing contact physics and control logic virtually before risking expensive hardware on power lines.\n\n\n\n\n\n\n\n\n\n\n\n\nReal-world (Left) vs. Sim2Real Replica (Right)\n\n\nScript: “Here is a concrete example from our research. We have the physical Astria drone, and we have its high-fidelity digital replica. Before we fly near high-voltage lines, we test every control algorithm in the digital twin to ensure the system behaves as expected.”"
   },
   {
     "objectID": "lecture.html#rimless-wheel-robustness",
@@ -116,21 +116,21 @@
     "href": "lecture.html#integration-the-furuta-pendulum",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Integration: The Furuta Pendulum",
-    "text": "Integration: The Furuta Pendulum\n\n\n\nController Architecture \n\n\n\nPerformance (Pre-Move) \n\n\n\nHardware: Assembled (Physical).\nController: Neural Network (Code).\nVideo shows successful operation from Boise State lab.\n\n\nScript: “Here is the plan. On the left, we have the Neural Network controller (the brain). On the right, we have the video of it working perfectly in my previous lab. Currently, due to the move, the hardware and software are disconnected. That is the Integration Gap we need to solve.”"
+    "text": "Integration: The Furuta Pendulum\n\n\n\nController Architecture \n\n\n\nPerformance (Pre-Move) \n\n\n\nHardware: Assembled (Physical).\nController: Neural Network (Code).\nCurrent Status: Broken (Moved to Dallas).\n\nVideo shows successful operation from Boise State lab.\n\n\n\nScript: “Here is the plan. On the left, we have the Neural Network controller (the brain). On the right, we have the video of it working perfectly in my previous lab. Currently, due to the move, the hardware and software are disconnected. That is the Integration Gap we need to solve.”"
   },
   {
     "objectID": "lecture.html#the-black-box-problem",
     "href": "lecture.html#the-black-box-problem",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "The Black Box Problem",
-    "text": "The Black Box Problem\n\n\nClassical Code\nIF speed &gt; 50 THEN brake (Traceable)\n\nNeural Network\n0.23 * x1 + 0.99 * x2 ... (Opaque)\n\n\n\n\n\nScript: “Traditional code is readable. Neural networks are millions of opaque numbers. Traceability is a massive open problem in SE.”"
+    "text": "The Black Box Problem\n\n\nClassical Code\nIF speed &gt; 50 THEN brake (Traceable)\n\nNeural Network\n0.23 * x1 + 0.99 * x2 ... (Opaque)\n\n\n\n\n\n\n\nScript: “Traditional code is readable. Neural networks are millions of opaque numbers. Traceability is a massive open problem in SE.”"
   },
   {
-    "objectID": "lecture.html#ethics-responsibility",
-    "href": "lecture.html#ethics-responsibility",
+    "objectID": "lecture.html#the-ethics-of-ai",
+    "href": "lecture.html#the-ethics-of-ai",
     "title": "Data Science, AI, and ML in Systems Engineering",
-    "section": "Ethics & Responsibility",
-    "text": "Ethics & Responsibility\n\n\n\n\nScript: “If an autonomous car hits a pedestrian to save the passenger, who is responsible? As we build autonomous systems, we are engineering moral agents.”"
+    "section": "The Ethics of AI",
+    "text": "The Ethics of AI\n\n\n\n\n\n\nScript: “If an autonomous car hits a pedestrian to save the passenger, who is responsible? As we build autonomous systems, we are engineering moral agents.”"
   },
   {
     "objectID": "lecture.html#summary",
@@ -140,10 +140,10 @@
     "text": "Summary\n\n\n\n\n\nSystems are changing: From static to dynamic.\nTools: Python/MATLAB + Control Theory.\nMindset: AI is just a subsystem. Integration is key."
   },
   {
-    "objectID": "lecture.html#qa",
-    "href": "lecture.html#qa",
+    "objectID": "lecture.html#questions",
+    "href": "lecture.html#questions",
     "title": "Data Science, AI, and ML in Systems Engineering",
-    "section": "Q&A",
-    "text": "Q&A\n\nAykut Satici\nDepartment of Systems Engineering\nUniversity of Texas at Dallas\nQuestions?"
+    "section": "Questions?",
+    "text": "Questions?\n\nThank you!\nAykut C. Satici\nDepartment of Systems Engineering\nUniversity of Texas at Dallas\nQuestions?"
   }
 ]

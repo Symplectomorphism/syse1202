@@ -1,9 +1,9 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.8.29)  9 FEB 2026 20:38
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.2.9)  10 FEB 2026 05:39
  restricted system commands enabled.
 **lecture.tex
 (./lecture.tex
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-08-13>
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
 Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
 Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
@@ -42,30 +42,31 @@ Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
 Inserting `tracingstacklevels' in `input_level_string'.
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/koma-script/scrartc
 l.cls
-Document Class: scrartcl 2025/08/19 v3.46 KOMA-Script document class (article)
+Document Class: scrartcl 2026/02/02 v3.49.2 KOMA-Script document class (article
+)
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/koma-script/scrkbas
 e.sty
-Package: scrkbase 2025/08/19 v3.46 KOMA-Script package (KOMA-Script-dependent b
-asics and keyval usage)
+Package: scrkbase 2026/02/02 v3.49.2 KOMA-Script package (KOMA-Script-dependent
+ basics and keyval usage)
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/koma-script/scrbase
 .sty
-Package: scrbase 2025/08/19 v3.46 KOMA-Script package (KOMA-Script-independent 
-basics and keyval usage)
+Package: scrbase 2026/02/02 v3.49.2 KOMA-Script package (KOMA-Script-independen
+t basics and keyval usage)
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/koma-script/scrlfil
 e.sty
-Package: scrlfile 2025/08/19 v3.46 KOMA-Script package (file load hooks)
+Package: scrlfile 2026/02/02 v3.49.2 KOMA-Script package (file load hooks)
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/koma-script/scrlfil
 e-hook.sty
-Package: scrlfile-hook 2025/08/19 v3.46 KOMA-Script package (using LaTeX hooks)
-
+Package: scrlfile-hook 2026/02/02 v3.49.2 KOMA-Script package (using LaTeX hook
+s)
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/koma-script/scrlogo
 .sty
-Package: scrlogo 2025/08/19 v3.46 KOMA-Script package (logo)
+Package: scrlogo 2026/02/02 v3.49.2 KOMA-Script package (logo)
 )))
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
@@ -77,7 +78,7 @@ Already applied: [0000/00/00] Usage of raw or classic option list on input line
 ))
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/koma-script/tocbasi
 c.sty
-Package: tocbasic 2025/08/19 v3.46 KOMA-Script package (handling toc-files)
+Package: tocbasic 2026/02/02 v3.49.2 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip49
 \scr@dte@tocline@numbox=\box53
 )
@@ -86,17 +87,17 @@ Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             for `toc' on input line 141.
 Class scrartcl Info: File `scrsize11pt.clo' used instead of
 (scrartcl)           file `scrsize11.clo' to setup font sizes on input line 248
-4.
+9.
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/koma-script/scrsize
 11pt.clo
-File: scrsize11pt.clo 2025/08/19 v3.46 KOMA-Script font size class option (11pt
-)
+File: scrsize11pt.clo 2026/02/02 v3.49.2 KOMA-Script font size class option (11
+pt)
 luaotfload | db : Font names database loaded from /home/icute/Applications/texli
 ve/2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/koma-script/typeare
 a.sty
-Package: typearea 2025/08/19 v3.46 KOMA-Script package (type area)
+Package: typearea 2026/02/02 v3.49.2 KOMA-Script package (type area)
 \ta@bcor=\skip50
 \ta@div=\count273
 Package typearea Info: You've used standard option `letterpaper'.
@@ -125,8 +126,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1805.
+(typearea)              on input line 1810.
 )
+\c_scrartcl_cmdhook_cctab=\catcodetable14
 \c@part=\count274
 \c@section=\count275
 \c@subsection=\count276
@@ -135,46 +137,46 @@ Package typearea Info: These are the values describing the layout:
 \c@subparagraph=\count279
 \scr@dte@section@maxnumwidth=\skip55
 Class scrartcl Info: using compatibility default `runin=bysign'
-(scrartcl)           for `\section on input line 5159.
+(scrartcl)           for `\section on input line 5015.
 Class scrartcl Info: using compatibility default `afterindent=bysign'
-(scrartcl)           for `\section on input line 5159.
+(scrartcl)           for `\section on input line 5015.
 \scr@dte@part@maxnumwidth=\skip56
 Class scrartcl Info: using compatibility default `afterindent=false'
-(scrartcl)           for `\part on input line 5167.
+(scrartcl)           for `\part on input line 5023.
 \scr@dte@subsection@maxnumwidth=\skip57
 Class scrartcl Info: using compatibility default `runin=bysign'
-(scrartcl)           for `\subsection on input line 5177.
+(scrartcl)           for `\subsection on input line 5033.
 Class scrartcl Info: using compatibility default `afterindent=bysign'
-(scrartcl)           for `\subsection on input line 5177.
+(scrartcl)           for `\subsection on input line 5033.
 \scr@dte@subsubsection@maxnumwidth=\skip58
 Class scrartcl Info: using compatibility default `runin=bysign'
-(scrartcl)           for `\subsubsection on input line 5187.
+(scrartcl)           for `\subsubsection on input line 5043.
 Class scrartcl Info: using compatibility default `afterindent=bysign'
-(scrartcl)           for `\subsubsection on input line 5187.
+(scrartcl)           for `\subsubsection on input line 5043.
 \scr@dte@paragraph@maxnumwidth=\skip59
 Class scrartcl Info: using compatibility default `runin=bysign'
-(scrartcl)           for `\paragraph on input line 5198.
+(scrartcl)           for `\paragraph on input line 5054.
 Class scrartcl Info: using compatibility default `afterindent=bysign'
-(scrartcl)           for `\paragraph on input line 5198.
+(scrartcl)           for `\paragraph on input line 5054.
 \scr@dte@subparagraph@maxnumwidth=\skip60
 Class scrartcl Info: using compatibility default `runin=bysign'
-(scrartcl)           for `\subparagraph on input line 5208.
+(scrartcl)           for `\subparagraph on input line 5064.
 Class scrartcl Info: using compatibility default `afterindent=bysign'
-(scrartcl)           for `\subparagraph on input line 5208.
+(scrartcl)           for `\subparagraph on input line 5064.
 \abovecaptionskip=\skip61
 \belowcaptionskip=\skip62
 \c@pti@nb@sid@b@x=\box54
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 6408.
+(tocbasic)             for `lof' on input line 6287.
 \scr@dte@figure@maxnumwidth=\skip63
 \c@figure=\count280
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 6420.
+(tocbasic)             for `lot' on input line 6299.
 \scr@dte@table@maxnumwidth=\skip64
 \c@table=\count281
-Class scrartcl Info: Redefining `\numberline' on input line 6590.
+Class scrartcl Info: Redefining `\numberline' on input line 6469.
 \bibindent=\dimen147
 ) (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
@@ -187,7 +189,7 @@ Package xcolor Info: Driver file: luatex.def on input line 274.
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/graphics-def/luatex
 .def
-File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
+File: luatex.def 2025/09/29 v1.2f Graphics/color driver for luatex
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.
 ltx)
@@ -295,11 +297,11 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/unicode-math/unicod
 e-math.sty (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/l3kernel
 /expl3.sty
-Package: expl3 2025-08-13 L3 programming layer (loader) 
+Package: expl3 2026-01-19 L3 programming layer (loader) 
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend
 -luatex.def
-File: l3backend-luatex.def 2025-06-09 L3 backend support: PDF output (LuaTeX)
+File: l3backend-luatex.def 2025-10-09 L3 backend support: PDF output (LuaTeX)
 \l__color_backend_stack_int=\count294
 Inserting `l3color' in `luaotfload.parse_color'.))
 Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
@@ -311,19 +313,19 @@ aTeX
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/x
 parse.sty
-Package: xparse 2024-08-16 L3 Experimental document command parser
+Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e
 /l3keys2e.sty
-Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.s
 ty
-Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
-Lua module: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec-l
 uatex.sty
-Package: fontspec-luatex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaT
+Package: fontspec-luatex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaT
 eX
 \l__fontspec_script_int=\count295
 \l__fontspec_language_int=\count296
@@ -340,7 +342,7 @@ eX
 \l__fontspec_tmpb_dim=\dimen158
 \l__fontspec_tmpc_dim=\dimen159
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.c
 fg))) (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/base/fix-cm.s
@@ -611,7 +613,7 @@ h LuaLaTeX
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.s
 ty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count306
 )
 Lua module: lualatex-math 2013/08/03 v1.3 Patches for mathematics typesetting wi
@@ -699,7 +701,7 @@ File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
 LaTeX Info: Redefining \microtypesetup on input line 3065.
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip69
 \LTright=\skip70
 \LTpre=\skip71
@@ -740,7 +742,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count320
 \@thisrulewidth=\dimen174
 ) (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/tools/array.sty
-Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen175
 \ar@mcellbox=\box63
 \extrarowheight=\dimen176
@@ -763,7 +765,7 @@ LaTeX Info: Redefining \addtolength on input line 87.
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/footnotehyper/footn
 otehyper.sty
-Package: footnotehyper 2021/08/13 v1.1e hyperref aware footnote.sty (JFB)
+Package: footnotehyper 2025/11/15 v1.1f hyperref aware footnote.sty (JFB)
 \FNH@notes=\box65
 \FNH@width=\dimen179
 \FNH@toks=\toks27
@@ -851,11 +853,11 @@ util-latex.def
 rcs.code.tex
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.
 tex)
-Package: pgfrcs 2025-08-14 v3.1.11 (3.1.11)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/p
 gfsys.code.tex
-Package: pgfsys 2025-08-14 v3.1.11 (3.1.11)
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgf
 keys.code.tex
@@ -889,43 +891,43 @@ keyslibraryfiltered.code.tex
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/p
 gf.cfg
-File: pgf.cfg 2025-08-14 v3.1.11 (3.1.11)
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-luatex.def
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/p
 gfsys-luatex.def
-File: pgfsys-luatex.def 2025-08-14 v3.1.11 (3.1.11)
+File: pgfsys-luatex.def 2025-08-29 v3.1.11a (3.1.11a)
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/p
 gfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2025-08-14 v3.1.11 (3.1.11)
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 )))
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/p
 gfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfsyssoftpath@smallbuffer@items=\count331
 \pgfsyssoftpath@bigbuffer@items=\count332
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/p
 gfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcolorbox
 .sty
-Package: tcolorbox 2025/07/08 version 6.7.1 text color boxes
+Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/t
 ikz.sty
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.
 sty
-Package: pgf 2025-08-14 v3.1.11 (3.1.11)
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfc
 ore.sty
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcore.code.tex
-Package: pgfcore 2025-08-14 v3.1.11 (3.1.11)
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.
 code.tex
@@ -968,7 +970,7 @@ loat.code.tex
 ode.tex)
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorepoints.code.tex
-File: pgfcorepoints.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen195
 \pgf@picmaxx=\dimen196
 \pgf@picminy=\dimen197
@@ -986,19 +988,19 @@ File: pgfcorepoints.code.tex 2025-08-14 v3.1.11 (3.1.11)
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@path@lastx=\dimen265
 \pgf@path@lasty=\dimen266
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@shorten@end@additional=\dimen267
 \pgf@shorten@start@additional=\dimen268
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorescopes.code.tex
-File: pgfcorescopes.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box70
 \pgf@hbox=\box71
 \pgf@layerbox@main=\box72
@@ -1006,83 +1008,83 @@ File: pgfcorescopes.code.tex 2025-08-14 v3.1.11 (3.1.11)
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen269
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@pt@x=\dimen270
 \pgf@pt@y=\dimen271
 \pgf@pt@temp=\dimen272
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorequick.code.tex
-File: pgfcorequick.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorearrows.code.tex
-File: pgfcorearrows.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowsep=\dimen273
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcoreshade.code.tex
-File: pgfcoreshade.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen274
 \pgf@sys@shading@range@num=\count336
 \pgf@shadingcount=\count337
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcoreimage.code.tex
-File: pgfcoreimage.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box73
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorelayers.code.tex
-File: pgfcorelayers.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorerdf.code.tex
-File: pgfcorerdf.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmo
 duleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box74
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmo
 duleplot.code.tex
-File: pgfmoduleplot.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/p
 gfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2025-08-14 v3.1.11 (3.1.11)
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@nodesepstart=\dimen275
 \pgf@nodesepend=\dimen276
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/p
 gfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2025-08-14 v3.1.11 (3.1.11)
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 ))
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffo
 r.sty
@@ -1096,7 +1098,7 @@ y
 code.tex))
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgf
 for.code.tex
-Package: pgffor 2025-08-14 v3.1.11 (3.1.11)
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen277
 \pgffor@skip=\dimen278
 \pgffor@stack=\toks39
@@ -1104,11 +1106,11 @@ Package: pgffor 2025-08-14 v3.1.11 (3.1.11)
 ))
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer
 /tikz/tikz.code.tex
-Package: tikz 2025-08-14 v3.1.11 (3.1.11)
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgf
 libraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@plot@mark@count=\count338
 \pgfplotmarksize=\dimen279
 )
@@ -1131,7 +1133,7 @@ File: pgflibraryplothandlers.code.tex 2025-08-14 v3.1.11 (3.1.11)
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmo
 dulematrix.code.tex
-File: pgfmodulematrix.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfmatrixcurrentrow=\count343
 \pgfmatrixcurrentcolumn=\count344
 \pgf@matrix@numberofcolumns=\count345
@@ -1140,7 +1142,7 @@ File: pgfmodulematrix.code.tex 2025-08-14 v3.1.11 (3.1.11)
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer
 /tikz/libraries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2025-08-14 v3.1.11 (3.1.11)
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))) (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/tools/verbatim.
 sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
@@ -1167,7 +1169,7 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbskins.
 code.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '6.7.1'
+Library (tcolorbox): 'tcbskins.code.tex' version '6.9.0'
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/tikzfill/tikzfill.i
 mage.sty
@@ -1184,11 +1186,11 @@ File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
 ))
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbskinsj
 igsaw.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.7.1'
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.9.0'
 ))
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbbreaka
 ble.code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '6.7.1'
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.9.0'
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/pdfcol/pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
@@ -1219,8 +1221,8 @@ stack.sty
 Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
 \@catcodetablestackcnt=\count350
 )
-\CatcodeTableOther=\catcodetable14
-\CatcodeTableExpl=\catcodetable15
+\CatcodeTableOther=\catcodetable15
+\CatcodeTableExpl=\catcodetable16
 )
 LaTeX Font Info:    Trying to load font information for TU+fontawesomefree on i
 nput line 69.
@@ -1235,6 +1237,10 @@ awesomebrands.fd)))
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
+Package tocbasic Info: Loading of class-dependent code for package caption3
+(tocbasic)             prevented on line 50.
+
+
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/caption/caption3.st
 y
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
@@ -1246,18 +1252,7 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@indent=\dimen294
 \caption@parindent=\dimen295
 \caption@hangindent=\dimen296
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-Package caption Info: \@makecaption = \long macro:#1#2->\@abovecaptionbreak \vs
-kip \abovecaptionskip \@abovecaptionbreak \@@makecaption \@firstofone {#1}{#2}\
-@belowcaptionbreak \vskip \belowcaptionskip \@belowcaptionbreak  on input line 
-1175.
 )
-
-Package caption Warning: Unknown document class (or package),
-(caption)                standard defaults will be used.
-See the caption package documentation for explanation.
-
 \c@caption@flags=\count351
 \c@continuedfloat=\count352
 Package caption Info: longtable package is loaded.
@@ -1290,7 +1285,7 @@ Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.s
 ty
-Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys
 .sty
@@ -1309,7 +1304,7 @@ Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.st
 y
-Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/refcount/refcount.s
 ty
@@ -1335,7 +1330,7 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 \Hy@pagecounter=\count359
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 )
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.s
 ty
@@ -1343,22 +1338,22 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count360
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4066.
-Package hyperref Info: Hyper figures OFF on input line 4195.
-Package hyperref Info: Link nesting OFF on input line 4200.
-Package hyperref Info: Hyper index ON on input line 4203.
-Package hyperref Info: Plain pages OFF on input line 4210.
-Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Option `unicode' set `true' on input line 4072.
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4462.
+Package hyperref Info: Bookmarks ON on input line 4468.
 \c@Hy@tempcnt=\count361
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip19
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4801.
+LaTeX Info: Redefining \url on input line 4807.
 \XeTeXLinkMargin=\dimen298
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
@@ -1372,13 +1367,13 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 \Fld@menulength=\count362
 \Field@Width=\dimen299
 \Fld@charsize=\dimen300
-Package hyperref Info: Hyper figures OFF on input line 6078.
-Package hyperref Info: Link nesting OFF on input line 6083.
-Package hyperref Info: Hyper index ON on input line 6086.
-Package hyperref Info: backreferencing OFF on input line 6093.
-Package hyperref Info: Link coloring OFF on input line 6098.
-Package hyperref Info: Link coloring with OCG OFF on input line 6103.
-Package hyperref Info: PDF/A mode OFF on input line 6108.
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
 \Hy@abspage=\count363
 \c@Item=\count364
 \c@Hfootnote=\count365
@@ -1387,7 +1382,7 @@ Package hyperref Info: Driver (autodetected): hluatex.
 
 (/home/icute/Applications/texlive/2025/texmf-dist/tex/latex/hyperref/hluatex.de
 f
-File: hluatex.def 2025-07-12 v7.01o Hyperref driver for luaTeX
+File: hluatex.def 2026-01-29 v7.01p Hyperref driver for luaTeX
 \Fld@listcount=\count366
 \c@bookmark@seq@number=\count367
 
@@ -1719,7 +1714,9 @@ LaTeX Info: Redefining \microtypecontext on input line 192.
 Package microtype Info: Applying patch `item' on input line 192.
 Package microtype Info: Applying patch `toc' on input line 192.
 Package microtype Info: Applying patch `eqnum' on input line 192.
-Package microtype Info: Applying patch `footnote' on input line 192.
+
+Package microtype Warning: Unable to apply patch `footnote' on input line 192.
+
 Package microtype Info: Applying patch `verbatim' on input line 192.
 LaTeX Info: Redefining \microtypesetup on input line 192.
 Package microtype Info: Generating PDF output.
@@ -1743,6 +1740,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 192.
+\g__cctab_next_cctab=\catcodetable17
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -1790,15 +1788,15 @@ l.219 \begin
           {center}
 
 Here is how much of LuaTeX's memory you used:
- 41734 strings out of 470117
+ 41849 strings out of 476076
  100000,1648299 words of node,token memory allocated
- 6977 words of node memory still in use:
-   55 hlist, 2 vlist, 4 rule, 45 disc, 12 local_par, 1 dir, 2 math, 197 glue, 32
- kern, 45 penalty, 4 margin_kern, 430 glyph, 147 attribute, 66 glue_spec, 147 at
-tribute_list, 1 if_stack, 6 write, 5 pdf_dest, 21 pdf_colorstack, 1 pdf_setmatri
+ 6832 words of node memory still in use:
+   49 hlist, 2 vlist, 4 rule, 45 disc, 12 local_par, 1 dir, 2 math, 195 glue, 30
+ kern, 41 penalty, 4 margin_kern, 430 glyph, 139 attribute, 65 glue_spec, 139 at
+tribute_list, 1 if_stack, 6 write, 3 pdf_dest, 21 pdf_colorstack, 1 pdf_setmatri
 x, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:4,2:7,3:1,4:2,5:18,6:2,7:2,8:2,9:1,10:8,12:1
- 69320 multiletter control sequences out of 65536+600000
- 62 fonts using 19040451 bytes
+   avail lists: 1:3,2:7,3:1,4:2,5:18,6:2,7:2,8:1,9:1,10:8,12:1
+ 63482 multiletter control sequences out of 65536+600000
+ 62 fonts using 19040679 bytes
  108i,6n,114p,11228b,1126s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!

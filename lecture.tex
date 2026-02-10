@@ -188,7 +188,7 @@
 \makeatother
 \subtitle{From Classical Control to Intelligent Systems}
 \author{Aykut C. Satici}
-\date{2026-02-09}
+\date{2026-02-10}
 \begin{document}
 \maketitle
 
@@ -263,7 +263,9 @@
 
 \end{figure}%
 
+\begin{center}
 \includegraphics[width=0.5\linewidth,height=\textheight,keepaspectratio]{images/rimless_wheel.webp}
+\end{center}
 
 \begin{itemize}
 \tightlist
@@ -278,19 +280,13 @@
 \subsection{Systems Engineering in
 Action}\label{systems-engineering-in-action}
 
-\textbf{Drones}
+\textbf{Drones} \url{videos/quadrotor_lissajous.mp4}
 
-\url{videos/quadrotor_lissajous.mp4}
+\textbf{Soft Juggling} \url{videos/soft_juggler.mp4}
 
-\textbf{Soft Juggling}
+\textbf{Manipulation} \url{videos/pizza_tossing.mp4}
 
-\url{videos/soft_juggler.mp4}
-
-\textbf{Manipulation}
-
-\url{videos/pizza_tossing.mp4}
-
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colback=white, toptitle=1mm, breakable, colframe=quarto-callout-note-color-frame, arc=.35mm, bottomrule=.15mm, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, left=2mm, coltitle=black, toprule=.15mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, coltitle=black, opacitybacktitle=0.6, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, opacityback=0, leftrule=.75mm, colback=white, rightrule=.15mm, bottomtitle=1mm, toptitle=1mm, toprule=.15mm, breakable, left=2mm, titlerule=0mm]
 
 Systems Engineering connects \textbf{Control Theory}, \textbf{Embedded
 Systems}, and \textbf{Mechanical Design} to make these robots work in
@@ -368,12 +364,14 @@ the real world.
 \subsection{Classical vs.~Intelligent
 Systems}\label{classical-vs.-intelligent-systems}
 
-\textbf{Deterministic}
+\textbf{Deterministic} \begin{center}
 \includegraphics[width=\linewidth,height=3.125in,keepaspectratio]{lecture_files/mediabag/Deterministic_proces.png}
+\end{center}
 \emph{Predictable. Static.}
 
-\textbf{Stochastic}
+\textbf{Stochastic} \begin{center}
 \includegraphics[width=\linewidth,height=3.125in,keepaspectratio]{lecture_files/mediabag/Stochastic_process.png}
+\end{center}
 \emph{Adaptive. Learning.}
 
 \textbf{Script:} ``Historically, SE was about building clockwork. If I
@@ -407,7 +405,9 @@ Definition}\label{part-2-the-engineers-definition}
 \subsection{Disentangling the
 Buzzwords}\label{disentangling-the-buzzwords}
 
+\begin{center}
 \includesvg[width=\linewidth,height=4.6875in,keepaspectratio]{lecture_files/mediabag/AI_hierarchy.svg}
+\end{center}
 
 \textbf{Script:} ``Let's be precise. \textbf{AI} is the machine acting
 smart. \textbf{ML} is the algorithm learning from data. \textbf{Deep
@@ -426,7 +426,9 @@ equation.}
 \[ y \approx \hat{f}(x) \] \emph{We have the data points.} \emph{The
 computer finds the curve.}
 
+\begin{center}
 \includegraphics[width=\linewidth,height=3.125in,keepaspectratio]{lecture_files/mediabag/640px-Linear_regress.png}
+\end{center}
 
 \textbf{Script:} ``To an engineer, ML is just `Function Approximation.'
 We have a bunch of dots (data), and we ask the computer to draw the best
@@ -436,7 +438,9 @@ line through them. That line becomes our law.''
 
 \subsection{The V-Model and AI}\label{the-v-model-and-ai}
 
+\begin{center}
 \includegraphics[width=\linewidth,height=5.20833in,keepaspectratio]{lecture_files/mediabag/Systems_Engineering_.jpg}
+\end{center}
 
 \textbf{Script:} ``This is the Holy Grail of SE: The V-Model. Think of
 it as the `Map of Engineering.'
@@ -498,7 +502,7 @@ before they happen.''
 
 \end{figure}%
 
-\textbf{Real-world (Left) vs.~Sim2Real Replica (Right)}
+\emph{Real-world (Left) vs.~Sim2Real Replica (Right)}
 
 \textbf{Script:} ``Here is a concrete example from our research. We have
 the physical Astria drone, and we have its high-fidelity digital
@@ -646,8 +650,9 @@ it?''
 \subsection{Integration: The Furuta
 Pendulum}\label{integration-the-furuta-pendulum}
 
-\textbf{Controller Architecture}
+\textbf{Controller Architecture} \begin{center}
 \includegraphics[width=\linewidth,height=4.16667in,keepaspectratio]{lecture_files/mediabag/640px-Artificial_neu.png}
+\end{center}
 
 \textbf{Performance (Pre-Move)} \url{videos/furuta.mp4}
 
@@ -658,7 +663,13 @@ Pendulum}\label{integration-the-furuta-pendulum}
 \item
   \textbf{Controller}: Neural Network (Code).
 \item
-  \emph{Video shows successful operation from Boise State lab.}
+  \textbf{Current Status}: {\textbf{Broken (Moved to Dallas).}}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Video shows successful operation from Boise State lab.}
+  \end{itemize}
 \end{itemize}
 
 \textbf{Script:} ``Here is the plan. On the left, we have the Neural
@@ -679,15 +690,19 @@ Gap} we need to solve.''
 
 \texttt{0.23\ *\ x1\ +\ 0.99\ *\ x2\ ...} \emph{(Opaque)}
 
+\begin{center}
 \includegraphics[width=\linewidth,height=3.125in,keepaspectratio]{lecture_files/mediabag/640px-Colored_neural.png}
+\end{center}
 
 \textbf{Script:} ``Traditional code is readable. Neural networks are
 millions of opaque numbers. Traceability is a massive open problem in
 SE.''
 
-\subsection{Ethics \& Responsibility}\label{ethics-responsibility}
+\subsection{The Ethics of AI}\label{the-ethics-of-ai}
 
+\begin{center}
 \includesvg[width=\linewidth,height=4.16667in,keepaspectratio]{lecture_files/mediabag/Trolley_Problem.svg}
+\end{center}
 
 \textbf{Script:} ``If an autonomous car hits a pedestrian to save the
 passenger, who is responsible? As we build autonomous systems, we are
@@ -710,9 +725,12 @@ engineering moral agents.''
   \textbf{Mindset}: AI is just a subsystem. Integration is key.
 \end{enumerate}
 
-\subsection{Q\&A}\label{qa}
+\subsection{Questions?}\label{questions}
 
-\textbf{Aykut Satici}\\
+\textbf{Thank you!}
+
+\emph{Aykut C. Satici}
+
 \emph{Department of Systems Engineering}\\
 \emph{University of Texas at Dallas}
 
