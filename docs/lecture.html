@@ -162,9 +162,11 @@ Aykut C. Satici
 </div></div>
 <aside class="notes">
 <ul>
-<li>I’ve been around! I started in Turkey, did my PhD here at UTD, and then spent time in Italy and MIT.</li>
-<li>I spent the last 9 years at Boise State where I built my research lab and received tenure.</li>
-<li>I’m thrilled to be back at UTD starting this semester!</li>
+<li><strong>Background</strong>: My journey started in Mechatronics at Sabanci University in Istanbul, moving to Systems integration early on.</li>
+<li><strong>PhD at UTD</strong>: I focused on nonlinear control theory here at UTD, specifically geometric control of mechanical systems.</li>
+<li><strong>International Experience</strong>: Postdoc work in Naples (interaction control) and MIT (field robotics/DARPA Challenge) broadened my scope from theory to real-world deployment.</li>
+<li><strong>Boise State</strong>: Spent 9 years building the CORE Lab, focusing on Robot Locomotion and Manipulation.</li>
+<li><strong>Return to UTD</strong>: Excited to bring this experience back home to the Systems Engineering department, focusing on the intersection of classical control and modern AI.</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -210,8 +212,14 @@ Aykut C. Satici
 </div></div>
 <aside class="notes">
 <ul>
-<li>At BSU, I worked on the challenge of “contact.” Most robots are afraid of touching things too hard.</li>
-<li>We used Systems Engineering to design controllers that handle these impacts gracefully.</li>
+<li><strong>The Core Problem</strong>: “Contact” is the bane of classical robotics. Traditional control theory assumes smooth, continuous dynamics (differential equations).</li>
+<li><strong>Reality</strong>: Real-world interaction involves impacts, friction, and discrete jumps in velocity. These are “Hybrid Systems.”</li>
+<li><strong>My Solutions</strong>:
+<ul>
+<li><strong>Rimless Wheel</strong>: We studied the passive dynamics of walking—how to be energy efficient by utilizing gravity, rather than fighting it.</li>
+<li><strong>Astria</strong>: A drone that can physically interact with the environment (perching on power lines). This requires precise force control, not just position control.</li>
+<li><strong>IWP (Inertia Wheel Pendulum)</strong>: A classic nonlinear control problem. We use “Energy Shaping” to swing it up and balance, managing the energy flow in the system.</li>
+</ul></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -256,10 +264,13 @@ Aykut C. Satici
 </div>
 <aside class="notes">
 <ul>
-<li>These videos show systems level integration.</li>
-<li>Drones: Hardware + Real-time control.</li>
-<li>Soft Robots: Complex modeling + Sensing.</li>
-<li>Manipulation: High-speed coordination.</li>
+<li><strong>Systems Integation</strong>: These videos demonstrate what happens when you get the integration right.
+<ul>
+<li><strong>Drones (Lissajous)</strong>: This isn’t just a PID controller. It involves trajectory generation, state estimation (EKF), and real-time motor mixing.</li>
+<li><strong>Soft Juggling</strong>: A complex interaction problem. The paddle is soft, the ball is rigid. We need to model the deformation to predict the bounce.</li>
+<li><strong>Pizza Tossing</strong>: High-speed, non-prehensile manipulation. The robot doesn’t grasp the object; it manipulates it through dynamic forces (friction and inertia).</li>
+</ul></li>
+<li><strong>The Takeaway</strong>: Systems Engineering is the glue. It’s not just code, it’s not just mechanics. It’s understanding how the code affects the mechanics through the electronics.</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -318,7 +329,15 @@ Aykut C. Satici
 <p><strong>Stochastic</strong> <img data-src="images/stochastic.jpg" class="quarto-figure quarto-figure-center" height="300"> <em>Adaptive. Learning.</em></p>
 </div></div>
 <aside class="notes">
-<p><strong>Script:</strong> “Historically, SE was about building clockwork. If I turn gear A, gear B moves. Today, we build systems like the Mars Rover. It encounters unknown terrain. We can’t pre-program every reaction. It has to learn.”</p>
+<ul>
+<li><strong>The Paradigm Shift</strong>:
+<ul>
+<li><strong>From Clockwork</strong>: SE traditionally dealt with <em>Deterministic</em> systems. A car engine, a bridge, a circuit. We know the equations. IF Input A, THEN Output B.</li>
+<li><strong>To Intelligence</strong>: Modern systems operate in unstructured environments. The Mars Rover doesn’t know the friction coefficient of the rock it’s about to climb.</li>
+</ul></li>
+<li><strong>Stochasticity</strong>: We are moving from “Automated” (following a script) to “Autonomous” (making decisions under uncertainty).</li>
+<li><strong>The Challenge</strong>: How do we verify a system that isn’t deterministic? That is the central question of AI in SE.</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -345,7 +364,15 @@ Aykut C. Satici
 </ul>
 </div></div>
 <aside class="notes">
-<p><strong>Script:</strong> “Why can’t we just write ‘if-then’ statements? Because modern systems look like this (point to network map). They are too complex for manual analysis.”</p>
+<ul>
+<li><strong>Why can’t we just code it?</strong>:
+<ul>
+<li><strong>Complexity</strong>: Modern systems (e.g., global logistics, autonomous driving) have interactions that are too complex for human cognition.</li>
+<li><strong>Dimensionality</strong>: You cannot write <code>if-then</code> rules for a 4K camera feed. The state space is essentially infinite.</li>
+<li><strong>Non-Linearity</strong>: In complex systems, small changes can have massive effects (Chaos Theory). Analytical solutions often don’t exist.</li>
+</ul></li>
+<li><strong>The Solution</strong>: We stop trying to write the rules. We build systems that <em>learn</em> the rules from data. We trade “Explicit Understanding” for “Performance optimization.”</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -371,7 +398,16 @@ Aykut C. Satici
 </figure>
 </div>
 <aside class="notes">
-<p><strong>Script:</strong> “Let’s be precise. <strong>AI</strong> is the machine acting smart. <strong>ML</strong> is the algorithm learning from data. <strong>Deep Learning</strong> is the neural network approach. <strong>Data Science</strong> is the analysis of the logs.”</p>
+<ul>
+<li><strong>Let’s separate the hype from the engineering</strong>:
+<ul>
+<li><strong>AI (Artificial Intelligence)</strong>: The broad umbrella. Any technique that enables computers to mimic human behavior (logic, rules, learning).</li>
+<li><strong>ML (Machine Learning)</strong>: A subset of AI. Algorithms that improve through experience (data). It is statistical learning.</li>
+<li><strong>DL (Deep Learning)</strong>: A subset of ML. Uses multi-layered neural networks to learn representations from raw data (e.g., pixels to objects).</li>
+<li><strong>Data Science</strong>: The interdisciplinary field of extracting knowledge from data. It includes ML, but also statistics, visualization, and data engineering.</li>
+</ul></li>
+<li><strong>Why it matters</strong>: As systems engineers, we need to know which tool to pick. You don’t need Deep Learning for a linear regression problem.</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -400,7 +436,15 @@ Aykut C. Satici
 </figure>
 </div>
 <aside class="notes">
-<p><strong>Script:</strong> “To an engineer, ML is just ‘Function Approximation.’ We have a bunch of dots (data), and we ask the computer to draw the best line through them. That line becomes our law.”</p>
+<ul>
+<li><strong>The Fundamental Difference</strong>:
+<ul>
+<li><strong>Classical Engineering</strong>: We start with First Principles (Newton, Maxwell, Kirchhoff). We derive <span class="math inline">\(y = f(x)\)</span>. This gives us guarantees but requires perfect knowledge.</li>
+<li><strong>Machine Learning</strong>: We start with Data <span class="math inline">\((x, y)\)</span>. We assume a model structure <span class="math inline">\(\hat{f}(x)\)</span> (e.g., a neural net) and optimize parameters to minimize error.</li>
+</ul></li>
+<li><strong>Universal Function Approximation</strong>: To an engineer, a Neural Network is just a very flexible curve-fitting machine.</li>
+<li><strong>implication</strong>: We are replacing “Physics-based Modeling” with “Data-driven Modeling.” This is powerful but dangerous—we lose the guarantee of correctness outside the training distribution.</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -426,12 +470,18 @@ Aykut C. Satici
 </figure>
 </div>
 <aside class="notes">
-<p><strong>Script:</strong> “This is the Holy Grail of SE: The V-Model. Think of it as the ‘Map of Engineering.’</p>
 <ul>
-<li><strong>The Basic V:</strong> We go <strong>down</strong> into the details (Left) and then back <strong>up</strong> into the real world (Right).</li>
-<li><strong>The AI Connection (Dual-Track):</strong> AI is just a subsystem. The V-Model ensures the ‘Smart’ AI code actually integrates with the ‘Real’ hardware.</li>
-<li><strong>The Requirement Shift:</strong> Instead of writing rules (If-Then), we design the <strong>Data</strong>. We are engineering the environment the AI learns from.</li>
-<li><strong>The Verification Gap:</strong> We can’t test every line of code in a neural network. Verification shifts from ‘Does it match logic?’ to ‘Does it handle the statistical edge cases?’”</li>
+<li><strong>The V-Model Crisis</strong>:
+<ul>
+<li><strong>Left Side (Design)</strong>: How do you write requirements for a neural net? “Must detect pedestrians” is vague. The requirement becomes the <em>Training Set</em>.</li>
+<li><strong>Right Side (Verification)</strong>: How do you unit test a black box? You can’t trace the logic. Verification shifts to <em>Statistical Validation</em> on held-out test sets.</li>
+</ul></li>
+<li><strong>The Dual-Track Lifecycle</strong>: We now have two parallel tracks.
+<ol type="1">
+<li><strong>Software Track</strong>: Traditional Code (Rule-based, safe, auditable).</li>
+<li><strong>Model Track</strong>: Data Collection -&gt; Training -&gt; Evaluation.</li>
+</ol></li>
+<li><strong>Integration</strong>: The challenge is merging these. The AI component is just a probabilistic function call within a deterministic safety-critical system.</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -456,7 +506,19 @@ Aykut C. Satici
 <p><strong>Digital Replica</strong></p>
 </div></div>
 <aside class="notes">
-<p><strong>Script:</strong> “We build a Digital Twin. The physical engine sends data to the digital one. The digital one uses ML to predict failures before they happen.”</p>
+<ul>
+<li><strong>The Digital Twin Concept</strong>:
+<ul>
+<li><strong>Definition</strong>: It is not just a 3D model. It is a probabilistic simulation that runs in parallel with the physical asset.</li>
+<li><strong>The Loop</strong>:
+<ol type="1">
+<li>Sensors on the engine send real-time data to the Cloud.</li>
+<li>The Digital Twin processes this data using ML/Physics models.</li>
+<li>The Twin predicts a bearing failure 200 hours in advance.</li>
+</ol></li>
+<li><strong>Value</strong>: We move from “Reactive Maintenance” (fix it when it breaks) to “Predictive Maintenance” (fix it before it breaks).</li>
+</ul></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -492,7 +554,14 @@ Aykut C. Satici
 <p><em>Real-world (Left) vs.&nbsp;Sim2Real Replica (Right)</em></p>
 </div></div>
 <aside class="notes">
-<p><strong>Script:</strong> “Here is a concrete example from our research. We have the physical Astria drone, and we have its high-fidelity digital replica. Before we fly near high-voltage lines, we test every control algorithm in the digital twin to ensure the system behaves as expected.”</p>
+<ul>
+<li><strong>Safety-Critical Verification</strong>:
+<ul>
+<li><strong>The Risk</strong>: We cannot just “try” a new AI controller on a heavy drone near high-voltage lines. A crash costs $50k and risks starting a fire.</li>
+<li><strong>The Solution</strong>: We validate in the Digital Twin. We run thousands of “Monte Carlo” simulations—varying wind, payload, and sensor noise.</li>
+<li><strong>Significance</strong>: This is how SE enables AI. We build the sandbox that makes learning safe.</li>
+</ul></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -547,6 +616,24 @@ Aykut C. Satici
 </div>
 </div>
 </div></div>
+<aside class="notes">
+<ul>
+<li><strong>Robustness in SE</strong>: In classical control, we check feedback stability (Eigenvalues).</li>
+<li><strong>The Problem with Contact</strong>: When a foot hits the ground, the physics change instantly (impact). Eigenvalues don’t work well here.</li>
+<li><strong>Basin of Attraction</strong>: Instead, we analyze the “Basin of Attraction”—how big of a disturbance (slope change, push) can the system recover from?</li>
+<li><strong>Visual</strong>: The videos show “stable limit cycles”—a repeating loop of states that handles disturbances naturally without explicit reprogramming.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
 <section id="part-4-live-case-study" class="title-slide slide level1 center" data-background-color="#154734">
@@ -567,7 +654,20 @@ Aykut C. Satici
 </ol>
 </div></div>
 <aside class="notes">
-<p><strong>Script:</strong> “We use Reinforcement Learning. The AI tries random things. It fails. It learns. Eventually, it masters the physics.”</p>
+<ul>
+<li><strong>Reinforcement Learning (RL)</strong>:
+<ul>
+<li><strong>The Agent</strong>: The AI controller.</li>
+<li><strong>The Environment</strong>: The physical laws (gravity, friction).</li>
+<li><strong>The Loop</strong>:
+<ol type="1">
+<li><strong>Observe</strong>: “I am falling left.”</li>
+<li><strong>Act</strong>: “Spin motor right.”</li>
+<li><strong>Reward</strong>: “I stayed up for 0.1s! (+1 point).”</li>
+</ol></li>
+<li><strong>The Magic</strong>: We don’t tell it F=ma. It <em>discovers</em> F=ma by trying to maximize points.</li>
+</ul></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -593,7 +693,15 @@ Aykut C. Satici
 <p><em>Noise &amp; Friction</em></p>
 </div></div>
 <aside class="notes">
-<p><strong>Script:</strong> “We train in simulation (perfect). We deploy to reality (messy). If the model overfits, the robot crashes. We need Robust Control.”</p>
+<ul>
+<li><strong>The Reality Gap</strong>:
+<ul>
+<li><strong>Simulation</strong>: Perfect friction, no delay, perfect sensors.</li>
+<li><strong>Reality</strong>: Grease, 10ms delay, noisy encoders.</li>
+<li><strong>The Failure Mode</strong>: A policy trained only in a perfect sim will fail instantly in reality. It “overfits” to the physics engine.</li>
+<li><strong>Domain Randomization</strong>: We train the AI in a “Shiftng Simulation”—randomly changing gravity, mass, and friction every episode. This forces the AI to learn a <em>robust</em> policy that works across a range of physics.</li>
+</ul></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -623,6 +731,23 @@ Aykut C. Satici
 </div><div class="column" style="width:60%;">
 <video id="video_shortcode_videojs_video9" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/walking_RL.mp4"></video>
 </div></div>
+<aside class="notes">
+<ul>
+<li><strong>Emergent Behavior</strong>: We defined the <em>goal</em> (move +z), not the <em>method</em>.</li>
+<li><strong>The Result</strong>: The AI discovered a “galloping” gait. This is often more efficient than what a human would code manually.</li>
+<li><strong>Caveat</strong>: It also discovered that vibrating on the spot earned points. We had to fix the reward function. This is “Reward Hacking” — a major safety concern in AI.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="the-furuta-pendulum" class="slide level2 center">
 <h2>The Furuta Pendulum</h2>
@@ -638,7 +763,14 @@ Aykut C. Satici
 <p><img data-src="images/furuta.jpg" height="400"></p>
 </div></div>
 <aside class="notes">
-<p><strong>Script:</strong> (Walk to the table) “Here it is. The Furuta Pendulum. It has a motor, an arm, and a pendulum. It looks like a system. But is it?”</p>
+<ul>
+<li><strong>The Hardware</strong>:
+<ul>
+<li><strong>Underactuated</strong>: 2 degrees of freedom (arm, pendulum), but only 1 motor. You can’t just “command” the pendulum to go up. You have to swing it.</li>
+<li><strong>Nonlinear</strong>: Gravity acts differently depending on the angle.</li>
+<li><strong>The Challenge</strong>: Using a Neural Network to swing this up and balance it, replacing the 3 pages of differential equations I usually use.</li>
+</ul></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -672,7 +804,15 @@ Aykut C. Satici
 </ul></li>
 </ul>
 <aside class="notes">
-<p><strong>Script:</strong> “Here is the plan. On the left, we have the Neural Network controller (the brain). On the right, we have the video of it working perfectly in my previous lab. Currently, due to the move, the hardware and software are disconnected. That is the <strong>Integration Gap</strong> we need to solve.”</p>
+<ul>
+<li><strong>The Integration Plan</strong>:
+<ol type="1">
+<li><strong>Phase 1 (Sim)</strong>: Train the Policy using PPO (Proximal Policy Optimization).</li>
+<li><strong>Phase 2 (Gap verify)</strong>: Test the policy with added noise.</li>
+<li><strong>Phase 3 (Deploy)</strong>: Run the neural net on the embedded microcontroller (Raspberry Pi / Arduino).</li>
+</ol></li>
+<li><strong>Status</strong>: The hardware is physically here. The code is trained. We are working on the <em>Interface</em>—getting the Python weights to run on the C++ driver.</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -706,7 +846,15 @@ Aykut C. Satici
 </figure>
 </div>
 <aside class="notes">
-<p><strong>Script:</strong> “Traditional code is readable. Neural networks are millions of opaque numbers. Traceability is a massive open problem in SE.”</p>
+<ul>
+<li><strong>Traceability</strong>: In SE, we need to trace every line of code to a requirement.</li>
+<li><strong>Explainable AI (XAI)</strong>:
+<ul>
+<li><strong>Saliency Maps</strong>: “Why did the car stop? Because it saw these pixels.”</li>
+<li><strong>Counterfactuals</strong>: “What if the pedestrian was wearing blue?”</li>
+</ul></li>
+<li><strong>The Trade-off</strong>: We often trade <em>Accuracy</em> (Deep Learning) for <em>Interpretability</em> (Decision Trees). For safety-critical systems, we might prefer a dumber but understandable model.</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -727,7 +875,11 @@ Aykut C. Satici
 </figure>
 </div>
 <aside class="notes">
-<p><strong>Script:</strong> “If an autonomous car hits a pedestrian to save the passenger, who is responsible? As we build autonomous systems, we are engineering moral agents.”</p>
+<ul>
+<li><strong>The Trolley Problem</strong>: It’s not just philosophy anymore. It’s code.</li>
+<li><strong>Accountability</strong>: If the AI makes a mistake, who is liable? The engineer? The company? The dataset creator?</li>
+<li><strong>Bias</strong>: If the training data only has sunny days, the car will kill people in the rain. Systems Engineering must ensure <em>Data Coverage</em> just like we ensure <em>Test Coverage</em>.</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

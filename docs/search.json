@@ -4,21 +4,21 @@
     "href": "lecture.html#who-am-i",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Who am I?",
-    "text": "Who am I?\n\n\nMy Journey\n\nEducation: BS/MS in Mechatronics (Turkey), PhD in EE & MS in Math (UTD).\nResearch Training: Postdoc at U. Naples (Italy) & MIT (USA).\nProfessorate: Assistant & Associate Professor at Boise State University (2017-2025).\nCurrently: Back home at UT Dallas as Associate Professor of Systems Engineering.\n\n\n \n\n\n\nI’ve been around! I started in Turkey, did my PhD here at UTD, and then spent time in Italy and MIT.\nI spent the last 9 years at Boise State where I built my research lab and received tenure.\nI’m thrilled to be back at UTD starting this semester!"
+    "text": "Who am I?\n\n\nMy Journey\n\nEducation: BS/MS in Mechatronics (Turkey), PhD in EE & MS in Math (UTD).\nResearch Training: Postdoc at U. Naples (Italy) & MIT (USA).\nProfessorate: Assistant & Associate Professor at Boise State University (2017-2025).\nCurrently: Back home at UT Dallas as Associate Professor of Systems Engineering.\n\n\n \n\n\n\nBackground: My journey started in Mechatronics at Sabanci University in Istanbul, moving to Systems integration early on.\nPhD at UTD: I focused on nonlinear control theory here at UTD, specifically geometric control of mechanical systems.\nInternational Experience: Postdoc work in Naples (interaction control) and MIT (field robotics/DARPA Challenge) broadened my scope from theory to real-world deployment.\nBoise State: Spent 9 years building the CORE Lab, focusing on Robot Locomotion and Manipulation.\nReturn to UTD: Excited to bring this experience back home to the Systems Engineering department, focusing on the intersection of classical control and modern AI."
   },
   {
     "objectID": "lecture.html#bsu-locomotion-contact",
     "href": "lecture.html#bsu-locomotion-contact",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "BSU: Locomotion & Contact",
-    "text": "BSU: Locomotion & Contact\n\n\n\nThe Problem: Robots struggle with uneven terrain and physical collisions.\nThe Solutions:\n\nRimless Wheel: Stability of passive walking.\nAstria: Drone/power-line interaction.\nIWP: Energy-shaping control for acrobatics.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAt BSU, I worked on the challenge of “contact.” Most robots are afraid of touching things too hard.\nWe used Systems Engineering to design controllers that handle these impacts gracefully."
+    "text": "BSU: Locomotion & Contact\n\n\n\nThe Problem: Robots struggle with uneven terrain and physical collisions.\nThe Solutions:\n\nRimless Wheel: Stability of passive walking.\nAstria: Drone/power-line interaction.\nIWP: Energy-shaping control for acrobatics.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Core Problem: “Contact” is the bane of classical robotics. Traditional control theory assumes smooth, continuous dynamics (differential equations).\nReality: Real-world interaction involves impacts, friction, and discrete jumps in velocity. These are “Hybrid Systems.”\nMy Solutions:\n\nRimless Wheel: We studied the passive dynamics of walking—how to be energy efficient by utilizing gravity, rather than fighting it.\nAstria: A drone that can physically interact with the environment (perching on power lines). This requires precise force control, not just position control.\nIWP (Inertia Wheel Pendulum): A classic nonlinear control problem. We use “Energy Shaping” to swing it up and balance, managing the energy flow in the system."
   },
   {
     "objectID": "lecture.html#systems-engineering-in-action",
     "href": "lecture.html#systems-engineering-in-action",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Systems Engineering in Action",
-    "text": "Systems Engineering in Action\n\n\n\nDrones \n\n\n\nSoft Juggling \n\n\n\nManipulation \n\n\n\n\n\n\n\n\nNote\n\n\nSystems Engineering connects Control Theory, Embedded Systems, and Mechanical Design to make these robots work in the real world.\n\n\n\n\n\nThese videos show systems level integration.\nDrones: Hardware + Real-time control.\nSoft Robots: Complex modeling + Sensing.\nManipulation: High-speed coordination."
+    "text": "Systems Engineering in Action\n\n\n\nDrones \n\n\n\nSoft Juggling \n\n\n\nManipulation \n\n\n\n\n\n\n\n\nNote\n\n\nSystems Engineering connects Control Theory, Embedded Systems, and Mechanical Design to make these robots work in the real world.\n\n\n\n\n\nSystems Integation: These videos demonstrate what happens when you get the integration right.\n\nDrones (Lissajous): This isn’t just a PID controller. It involves trajectory generation, state estimation (EKF), and real-time motor mixing.\nSoft Juggling: A complex interaction problem. The paddle is soft, the ball is rigid. We need to model the deformation to predict the bounce.\nPizza Tossing: High-speed, non-prehensile manipulation. The robot doesn’t grasp the object; it manipulates it through dynamic forces (friction and inertia).\n\nThe Takeaway: Systems Engineering is the glue. It’s not just code, it’s not just mechanics. It’s understanding how the code affects the mechanics through the electronics."
   },
   {
     "objectID": "lecture.html#agenda",
@@ -32,105 +32,105 @@
     "href": "lecture.html#classical-vs.-intelligent-systems",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Classical vs. Intelligent Systems",
-    "text": "Classical vs. Intelligent Systems\n\n\nDeterministic  Predictable. Static.\n\nStochastic  Adaptive. Learning.\n\n\nScript: “Historically, SE was about building clockwork. If I turn gear A, gear B moves. Today, we build systems like the Mars Rover. It encounters unknown terrain. We can’t pre-program every reaction. It has to learn.”"
+    "text": "Classical vs. Intelligent Systems\n\n\nDeterministic  Predictable. Static.\n\nStochastic  Adaptive. Learning.\n\n\n\nThe Paradigm Shift:\n\nFrom Clockwork: SE traditionally dealt with Deterministic systems. A car engine, a bridge, a circuit. We know the equations. IF Input A, THEN Output B.\nTo Intelligence: Modern systems operate in unstructured environments. The Mars Rover doesn’t know the friction coefficient of the rock it’s about to climb.\n\nStochasticity: We are moving from “Automated” (following a script) to “Autonomous” (making decisions under uncertainty).\nThe Challenge: How do we verify a system that isn’t deterministic? That is the central question of AI in SE."
   },
   {
     "objectID": "lecture.html#why-we-need-ai",
     "href": "lecture.html#why-we-need-ai",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Why We Need AI",
-    "text": "Why We Need AI\n\n\n\n\nThe Complexity Gap\n\nData Volume: Terabytes/hour.\nDimensionality: Systems with 1000+ variables.\nHuman Limits: We cannot manually optimize these anymore.\n\n\n\nScript: “Why can’t we just write ‘if-then’ statements? Because modern systems look like this (point to network map). They are too complex for manual analysis.”"
+    "text": "Why We Need AI\n\n\n\n\nThe Complexity Gap\n\nData Volume: Terabytes/hour.\nDimensionality: Systems with 1000+ variables.\nHuman Limits: We cannot manually optimize these anymore.\n\n\n\n\nWhy can’t we just code it?:\n\nComplexity: Modern systems (e.g., global logistics, autonomous driving) have interactions that are too complex for human cognition.\nDimensionality: You cannot write if-then rules for a 4K camera feed. The state space is essentially infinite.\nNon-Linearity: In complex systems, small changes can have massive effects (Chaos Theory). Analytical solutions often don’t exist.\n\nThe Solution: We stop trying to write the rules. We build systems that learn the rules from data. We trade “Explicit Understanding” for “Performance optimization.”"
   },
   {
     "objectID": "lecture.html#disentangling-the-buzzwords",
     "href": "lecture.html#disentangling-the-buzzwords",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Disentangling the Buzzwords",
-    "text": "Disentangling the Buzzwords\n\n\n\n\n\n\nScript: “Let’s be precise. AI is the machine acting smart. ML is the algorithm learning from data. Deep Learning is the neural network approach. Data Science is the analysis of the logs.”"
+    "text": "Disentangling the Buzzwords\n\n\n\n\n\n\n\nLet’s separate the hype from the engineering:\n\nAI (Artificial Intelligence): The broad umbrella. Any technique that enables computers to mimic human behavior (logic, rules, learning).\nML (Machine Learning): A subset of AI. Algorithms that improve through experience (data). It is statistical learning.\nDL (Deep Learning): A subset of ML. Uses multi-layered neural networks to learn representations from raw data (e.g., pixels to objects).\nData Science: The interdisciplinary field of extracting knowledge from data. It includes ML, but also statistics, visualization, and data engineering.\n\nWhy it matters: As systems engineers, we need to know which tool to pick. You don’t need Deep Learning for a linear regression problem."
   },
   {
     "objectID": "lecture.html#the-engineering-view",
     "href": "lecture.html#the-engineering-view",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "The Engineering View",
-    "text": "The Engineering View\n\n\nClassical\n\\[ y = f(x) \\] We know the physics (F=ma). We write the equation.\n\nMachine Learning\n\\[ y \\approx \\hat{f}(x) \\] We have the data points. The computer finds the curve.\n\n\n\n\n\n\n\nScript: “To an engineer, ML is just ‘Function Approximation.’ We have a bunch of dots (data), and we ask the computer to draw the best line through them. That line becomes our law.”"
+    "text": "The Engineering View\n\n\nClassical\n\\[ y = f(x) \\] We know the physics (F=ma). We write the equation.\n\nMachine Learning\n\\[ y \\approx \\hat{f}(x) \\] We have the data points. The computer finds the curve.\n\n\n\n\n\n\n\n\nThe Fundamental Difference:\n\nClassical Engineering: We start with First Principles (Newton, Maxwell, Kirchhoff). We derive \\(y = f(x)\\). This gives us guarantees but requires perfect knowledge.\nMachine Learning: We start with Data \\((x, y)\\). We assume a model structure \\(\\hat{f}(x)\\) (e.g., a neural net) and optimize parameters to minimize error.\n\nUniversal Function Approximation: To an engineer, a Neural Network is just a very flexible curve-fitting machine.\nimplication: We are replacing “Physics-based Modeling” with “Data-driven Modeling.” This is powerful but dangerous—we lose the guarantee of correctness outside the training distribution."
   },
   {
     "objectID": "lecture.html#the-v-model-and-ai",
     "href": "lecture.html#the-v-model-and-ai",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "The V-Model and AI",
-    "text": "The V-Model and AI\n\n\n\n\n\n\nScript: “This is the Holy Grail of SE: The V-Model. Think of it as the ‘Map of Engineering.’\n\nThe Basic V: We go down into the details (Left) and then back up into the real world (Right).\nThe AI Connection (Dual-Track): AI is just a subsystem. The V-Model ensures the ‘Smart’ AI code actually integrates with the ‘Real’ hardware.\nThe Requirement Shift: Instead of writing rules (If-Then), we design the Data. We are engineering the environment the AI learns from.\nThe Verification Gap: We can’t test every line of code in a neural network. Verification shifts from ‘Does it match logic?’ to ‘Does it handle the statistical edge cases?’”"
+    "text": "The V-Model and AI\n\n\n\n\n\n\n\nThe V-Model Crisis:\n\nLeft Side (Design): How do you write requirements for a neural net? “Must detect pedestrians” is vague. The requirement becomes the Training Set.\nRight Side (Verification): How do you unit test a black box? You can’t trace the logic. Verification shifts to Statistical Validation on held-out test sets.\n\nThe Dual-Track Lifecycle: We now have two parallel tracks.\n\nSoftware Track: Traditional Code (Rule-based, safe, auditable).\nModel Track: Data Collection -&gt; Training -&gt; Evaluation.\n\nIntegration: The challenge is merging these. The AI component is just a probabilistic function call within a deterministic safety-critical system."
   },
   {
     "objectID": "lecture.html#operations-the-digital-twin",
     "href": "lecture.html#operations-the-digital-twin",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Operations: The Digital Twin",
-    "text": "Operations: The Digital Twin\n\n\n\nPhysical Asset\n\n\nDigital Replica\n\n\nScript: “We build a Digital Twin. The physical engine sends data to the digital one. The digital one uses ML to predict failures before they happen.”"
+    "text": "Operations: The Digital Twin\n\n\n\nPhysical Asset\n\n\nDigital Replica\n\n\n\nThe Digital Twin Concept:\n\nDefinition: It is not just a 3D model. It is a probabilistic simulation that runs in parallel with the physical asset.\nThe Loop:\n\nSensors on the engine send real-time data to the Cloud.\nThe Digital Twin processes this data using ML/Physics models.\nThe Twin predicts a bearing failure 200 hours in advance.\n\nValue: We move from “Reactive Maintenance” (fix it when it breaks) to “Predictive Maintenance” (fix it before it breaks)."
   },
   {
     "objectID": "lecture.html#astria-digital-twin",
     "href": "lecture.html#astria-digital-twin",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Astria: Digital Twin",
-    "text": "Astria: Digital Twin\n\n\n\nThe Physical Asset: Autonomous drone with a gripper.\nThe Digital Replica: High-fidelity physics-based simulation.\nSystems Goal: Testing contact physics and control logic virtually before risking expensive hardware on power lines.\n\n\n\n\n\n\n\n\n\n\n\n\nReal-world (Left) vs. Sim2Real Replica (Right)\n\n\nScript: “Here is a concrete example from our research. We have the physical Astria drone, and we have its high-fidelity digital replica. Before we fly near high-voltage lines, we test every control algorithm in the digital twin to ensure the system behaves as expected.”"
+    "text": "Astria: Digital Twin\n\n\n\nThe Physical Asset: Autonomous drone with a gripper.\nThe Digital Replica: High-fidelity physics-based simulation.\nSystems Goal: Testing contact physics and control logic virtually before risking expensive hardware on power lines.\n\n\n\n\n\n\n\n\n\n\n\n\nReal-world (Left) vs. Sim2Real Replica (Right)\n\n\n\nSafety-Critical Verification:\n\nThe Risk: We cannot just “try” a new AI controller on a heavy drone near high-voltage lines. A crash costs $50k and risks starting a fire.\nThe Solution: We validate in the Digital Twin. We run thousands of “Monte Carlo” simulations—varying wind, payload, and sensor noise.\nSignificance: This is how SE enables AI. We build the sandbox that makes learning safe."
   },
   {
     "objectID": "lecture.html#rimless-wheel-robustness",
     "href": "lecture.html#rimless-wheel-robustness",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Rimless Wheel: Robustness",
-    "text": "Rimless Wheel: Robustness\n\n\n\nSystems Goal: Walking that doesn’t fall when the ground changes.\nNon-examples:\n\nFalling over (unstable).\nTripping on uneven ground (fragile).\n\nExamples:\n\nSteady rhythm on flat ground.\nRobustness: Recovering from uneven terrain.\n\n\n\nNon-examples (Not Working)\n\n\n\n\n\n\n\n\n\n\n\nExamples (Working Well)"
+    "text": "Rimless Wheel: Robustness\n\n\n\nSystems Goal: Walking that doesn’t fall when the ground changes.\nNon-examples:\n\nFalling over (unstable).\nTripping on uneven ground (fragile).\n\nExamples:\n\nSteady rhythm on flat ground.\nRobustness: Recovering from uneven terrain.\n\n\n\nNon-examples (Not Working)\n\n\n\n\n\n\n\n\n\n\n\nExamples (Working Well)\n\n\n\n\n\n\n\n\n\n\n\n\n\nRobustness in SE: In classical control, we check feedback stability (Eigenvalues).\nThe Problem with Contact: When a foot hits the ground, the physics change instantly (impact). Eigenvalues don’t work well here.\nBasin of Attraction: Instead, we analyze the “Basin of Attraction”—how big of a disturbance (slope change, push) can the system recover from?\nVisual: The videos show “stable limit cycles”—a repeating loop of states that handles disturbances naturally without explicit reprogramming."
   },
   {
     "objectID": "lecture.html#how-ai-learns-to-control",
     "href": "lecture.html#how-ai-learns-to-control",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "How AI Learns to Control",
-    "text": "How AI Learns to Control\n\n\n\n\nReinforcement Learning\n\nObserve state.\nTake Action (Voltage).\nGet Reward (+1 if upright).\n\n\n\nScript: “We use Reinforcement Learning. The AI tries random things. It fails. It learns. Eventually, it masters the physics.”"
+    "text": "How AI Learns to Control\n\n\n\n\nReinforcement Learning\n\nObserve state.\nTake Action (Voltage).\nGet Reward (+1 if upright).\n\n\n\n\nReinforcement Learning (RL):\n\nThe Agent: The AI controller.\nThe Environment: The physical laws (gravity, friction).\nThe Loop:\n\nObserve: “I am falling left.”\nAct: “Spin motor right.”\nReward: “I stayed up for 0.1s! (+1 point).”\n\nThe Magic: We don’t tell it F=ma. It discovers F=ma by trying to maximize points."
   },
   {
     "objectID": "lecture.html#sim2real-the-reality-check",
     "href": "lecture.html#sim2real-the-reality-check",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Sim2Real: The Reality Check",
-    "text": "Sim2Real: The Reality Check\n\n\nSimulation\n\nPerfect Math\n\nReality\n\nNoise & Friction\n\n\nScript: “We train in simulation (perfect). We deploy to reality (messy). If the model overfits, the robot crashes. We need Robust Control.”"
+    "text": "Sim2Real: The Reality Check\n\n\nSimulation\n\nPerfect Math\n\nReality\n\nNoise & Friction\n\n\n\nThe Reality Gap:\n\nSimulation: Perfect friction, no delay, perfect sensors.\nReality: Grease, 10ms delay, noisy encoders.\nThe Failure Mode: A policy trained only in a perfect sim will fail instantly in reality. It “overfits” to the physics engine.\nDomain Randomization: We train the AI in a “Shiftng Simulation”—randomly changing gravity, mass, and friction every episode. This forces the AI to learn a robust policy that works across a range of physics."
   },
   {
     "objectID": "lecture.html#learning-to-walk-rl-in-action",
     "href": "lecture.html#learning-to-walk-rl-in-action",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Learning to Walk: RL in Action",
-    "text": "Learning to Walk: RL in Action\n\n\n\nThe Goal: Make the robot walk forward.\nThe Process:\n\nStart with zero knowledge.\nTry random actions.\nGet rewarded for forward motion.\nResult: Emergent walking behavior."
+    "text": "Learning to Walk: RL in Action\n\n\n\nThe Goal: Make the robot walk forward.\nThe Process:\n\nStart with zero knowledge.\nTry random actions.\nGet rewarded for forward motion.\nResult: Emergent walking behavior.\n\n\n\n\n\n\n\nEmergent Behavior: We defined the goal (move +z), not the method.\nThe Result: The AI discovered a “galloping” gait. This is often more efficient than what a human would code manually.\nCaveat: It also discovered that vibrating on the spot earned points. We had to fix the reward function. This is “Reward Hacking” — a major safety concern in AI."
   },
   {
     "objectID": "lecture.html#the-furuta-pendulum",
     "href": "lecture.html#the-furuta-pendulum",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "The Furuta Pendulum",
-    "text": "The Furuta Pendulum\n\n\n\nGoal: Balance upright.\nActuator: Base Motor.\nSensor: Encoders.\n\n\n\n\n\n\nScript: (Walk to the table) “Here it is. The Furuta Pendulum. It has a motor, an arm, and a pendulum. It looks like a system. But is it?”"
+    "text": "The Furuta Pendulum\n\n\n\nGoal: Balance upright.\nActuator: Base Motor.\nSensor: Encoders.\n\n\n\n\n\n\n\nThe Hardware:\n\nUnderactuated: 2 degrees of freedom (arm, pendulum), but only 1 motor. You can’t just “command” the pendulum to go up. You have to swing it.\nNonlinear: Gravity acts differently depending on the angle.\nThe Challenge: Using a Neural Network to swing this up and balance it, replacing the 3 pages of differential equations I usually use."
   },
   {
     "objectID": "lecture.html#integration-the-furuta-pendulum",
     "href": "lecture.html#integration-the-furuta-pendulum",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "Integration: The Furuta Pendulum",
-    "text": "Integration: The Furuta Pendulum\n\n\n\nController Architecture \n\n\n\nPerformance (Pre-Move) \n\n\n\nHardware: Assembled (Physical).\nController: Neural Network (Code).\nCurrent Status: Broken (Moved to Dallas).\n\nVideo shows successful operation from Boise State lab.\n\n\n\nScript: “Here is the plan. On the left, we have the Neural Network controller (the brain). On the right, we have the video of it working perfectly in my previous lab. Currently, due to the move, the hardware and software are disconnected. That is the Integration Gap we need to solve.”"
+    "text": "Integration: The Furuta Pendulum\n\n\n\nController Architecture \n\n\n\nPerformance (Pre-Move) \n\n\n\nHardware: Assembled (Physical).\nController: Neural Network (Code).\nCurrent Status: Broken (Moved to Dallas).\n\nVideo shows successful operation from Boise State lab.\n\n\n\n\nThe Integration Plan:\n\nPhase 1 (Sim): Train the Policy using PPO (Proximal Policy Optimization).\nPhase 2 (Gap verify): Test the policy with added noise.\nPhase 3 (Deploy): Run the neural net on the embedded microcontroller (Raspberry Pi / Arduino).\n\nStatus: The hardware is physically here. The code is trained. We are working on the Interface—getting the Python weights to run on the C++ driver."
   },
   {
     "objectID": "lecture.html#the-black-box-problem",
     "href": "lecture.html#the-black-box-problem",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "The Black Box Problem",
-    "text": "The Black Box Problem\n\n\nClassical Code\nIF speed &gt; 50 THEN brake (Traceable)\n\nNeural Network\n0.23 * x1 + 0.99 * x2 ... (Opaque)\n\n\n\n\n\n\n\nScript: “Traditional code is readable. Neural networks are millions of opaque numbers. Traceability is a massive open problem in SE.”"
+    "text": "The Black Box Problem\n\n\nClassical Code\nIF speed &gt; 50 THEN brake (Traceable)\n\nNeural Network\n0.23 * x1 + 0.99 * x2 ... (Opaque)\n\n\n\n\n\n\n\n\nTraceability: In SE, we need to trace every line of code to a requirement.\nExplainable AI (XAI):\n\nSaliency Maps: “Why did the car stop? Because it saw these pixels.”\nCounterfactuals: “What if the pedestrian was wearing blue?”\n\nThe Trade-off: We often trade Accuracy (Deep Learning) for Interpretability (Decision Trees). For safety-critical systems, we might prefer a dumber but understandable model."
   },
   {
     "objectID": "lecture.html#the-ethics-of-ai",
     "href": "lecture.html#the-ethics-of-ai",
     "title": "Data Science, AI, and ML in Systems Engineering",
     "section": "The Ethics of AI",
-    "text": "The Ethics of AI\n\n\n\n\n\n\nScript: “If an autonomous car hits a pedestrian to save the passenger, who is responsible? As we build autonomous systems, we are engineering moral agents.”"
+    "text": "The Ethics of AI\n\n\n\n\n\n\n\nThe Trolley Problem: It’s not just philosophy anymore. It’s code.\nAccountability: If the AI makes a mistake, who is liable? The engineer? The company? The dataset creator?\nBias: If the training data only has sunny days, the car will kill people in the rain. Systems Engineering must ensure Data Coverage just like we ensure Test Coverage."
   },
   {
     "objectID": "lecture.html#summary",

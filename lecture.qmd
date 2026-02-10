@@ -36,9 +36,11 @@ format:
 ::::
 
 ::: notes
-* I've been around! I started in Turkey, did my PhD here at UTD, and then spent time in Italy and MIT.
-* I spent the last 9 years at Boise State where I built my research lab and received tenure.
-* I'm thrilled to be back at UTD starting this semester!
+*   **Background**: My journey started in Mechatronics at Sabanci University in Istanbul, moving to Systems integration early on.
+*   **PhD at UTD**: I focused on nonlinear control theory here at UTD, specifically geometric control of mechanical systems.
+*   **International Experience**: Postdoc work in Naples (interaction control) and MIT (field robotics/DARPA Challenge) broadened my scope from theory to real-world deployment.
+*   **Boise State**: Spent 9 years building the CORE Lab, focusing on Robot Locomotion and Manipulation.
+*   **Return to UTD**: Excited to bring this experience back home to the Systems Engineering department, focusing on the intersection of classical control and modern AI.
 :::
 
 ## BSU: Locomotion & Contact {.smaller}
@@ -66,8 +68,12 @@ format:
 ::::
 
 ::: notes
-* At BSU, I worked on the challenge of "contact." Most robots are afraid of touching things too hard.
-* We used Systems Engineering to design controllers that handle these impacts gracefully.
+*   **The Core Problem**: "Contact" is the bane of classical robotics. Traditional control theory assumes smooth, continuous dynamics (differential equations).
+*   **Reality**: Real-world interaction involves impacts, friction, and discrete jumps in velocity. These are "Hybrid Systems."
+*   **My Solutions**:
+    *   **Rimless Wheel**: We studied the passive dynamics of walking—how to be energy efficient by utilizing gravity, rather than fighting it.
+    *   **Astria**: A drone that can physically interact with the environment (perching on power lines). This requires precise force control, not just position control.
+    *   **IWP (Inertia Wheel Pendulum)**: A classic nonlinear control problem. We use "Energy Shaping" to swing it up and balance, managing the energy flow in the system.
 :::
 
 
@@ -103,10 +109,11 @@ Systems Engineering connects **Control Theory**, **Embedded Systems**, and **Mec
 :::
 
 ::: notes
-* These videos show systems level integration.
-* Drones: Hardware + Real-time control.
-* Soft Robots: Complex modeling + Sensing.
-* Manipulation: High-speed coordination.
+*   **Systems Integation**: These videos demonstrate what happens when you get the integration right.
+    *   **Drones (Lissajous)**: This isn't just a PID controller. It involves trajectory generation, state estimation (EKF), and real-time motor mixing.
+    *   **Soft Juggling**: A complex interaction problem. The paddle is soft, the ball is rigid. We need to model the deformation to predict the bounce.
+    *   **Pizza Tossing**: High-speed, non-prehensile manipulation. The robot doesn't grasp the object; it manipulates it through dynamic forces (friction and inertia).
+*   **The Takeaway**: Systems Engineering is the glue. It's not just code, it's not just mechanics. It's understanding how the code affects the mechanics through the electronics.
 :::
 
 ## Agenda
@@ -148,9 +155,11 @@ Systems Engineering connects **Control Theory**, **Embedded Systems**, and **Mec
 :::
 
 ::: notes
-**Script:**
-"Historically, SE was about building clockwork. If I turn gear A, gear B moves.
-Today, we build systems like the Mars Rover. It encounters unknown terrain. We can't pre-program every reaction. It has to learn."
+*   **The Paradigm Shift**:
+    *   **From Clockwork**: SE traditionally dealt with *Deterministic* systems. A car engine, a bridge, a circuit. We know the equations. IF Input A, THEN Output B.
+    *   **To Intelligence**: Modern systems operate in unstructured environments. The Mars Rover doesn't know the friction coefficient of the rock it's about to climb.
+*   **Stochasticity**: We are moving from "Automated" (following a script) to "Autonomous" (making decisions under uncertainty).
+*   **The Challenge**: How do we verify a system that isn't deterministic? That is the central question of AI in SE.
 :::
 
 ## Why We Need AI
@@ -169,8 +178,11 @@ Today, we build systems like the Mars Rover. It encounters unknown terrain. We c
 :::
 
 ::: notes
-**Script:**
-"Why can't we just write 'if-then' statements? Because modern systems look like this (point to network map). They are too complex for manual analysis."
+*   **Why can't we just code it?**:
+    *   **Complexity**: Modern systems (e.g., global logistics, autonomous driving) have interactions that are too complex for human cognition.
+    *   **Dimensionality**: You cannot write `if-then` rules for a 4K camera feed. The state space is essentially infinite.
+    *   **Non-Linearity**: In complex systems, small changes can have massive effects (Chaos Theory). Analytical solutions often don't exist.
+*   **The Solution**: We stop trying to write the rules. We build systems that *learn* the rules from data. We trade "Explicit Understanding" for "Performance optimization."
 :::
 
 # Part 2: The Engineer's Definition
@@ -180,12 +192,12 @@ Today, we build systems like the Mars Rover. It encounters unknown terrain. We c
 ![](https://upload.wikimedia.org/wikipedia/commons/1/1b/AI_hierarchy.svg){height="450" fig-align="center"}
 
 ::: notes
-**Script:**
-"Let's be precise.
-**AI** is the machine acting smart.
-**ML** is the algorithm learning from data.
-**Deep Learning** is the neural network approach.
-**Data Science** is the analysis of the logs."
+*   **Let's separate the hype from the engineering**:
+    *   **AI (Artificial Intelligence)**: The broad umbrella. Any technique that enables computers to mimic human behavior (logic, rules, learning).
+    *   **ML (Machine Learning)**: A subset of AI. Algorithms that improve through experience (data). It is statistical learning.
+    *   **DL (Deep Learning)**: A subset of ML. Uses multi-layered neural networks to learn representations from raw data (e.g., pixels to objects).
+    *   **Data Science**: The interdisciplinary field of extracting knowledge from data. It includes ML, but also statistics, visualization, and data engineering.
+*   **Why it matters**: As systems engineers, we need to know which tool to pick. You don't need Deep Learning for a linear regression problem.
 :::
 
 ## The Engineering View
@@ -209,9 +221,11 @@ $$ y \approx \hat{f}(x) $$
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/640px-Linear_regression.svg.png){height="300" fig-align="center"}
 
 ::: notes
-**Script:**
-"To an engineer, ML is just 'Function Approximation.'
-We have a bunch of dots (data), and we ask the computer to draw the best line through them. That line becomes our law."
+*   **The Fundamental Difference**:
+    *   **Classical Engineering**: We start with First Principles (Newton, Maxwell, Kirchhoff). We derive $y = f(x)$. This gives us guarantees but requires perfect knowledge.
+    *   **Machine Learning**: We start with Data $(x, y)$. We assume a model structure $\hat{f}(x)$ (e.g., a neural net) and optimize parameters to minimize error.
+*   **Universal Function Approximation**: To an engineer, a Neural Network is just a very flexible curve-fitting machine.
+*   **implication**: We are replacing "Physics-based Modeling" with "Data-driven Modeling." This is powerful but dangerous—we lose the guarantee of correctness outside the training distribution.
 :::
 
 # Part 3: The Lifecycle
@@ -221,13 +235,13 @@ We have a bunch of dots (data), and we ask the computer to draw the best line th
 ![](https://upload.wikimedia.org/wikipedia/commons/9/9b/Systems_Engineering_V_diagram.jpg){height="500" fig-align="center"}
 
 ::: notes
-**Script:**
-"This is the Holy Grail of SE: The V-Model. Think of it as the 'Map of Engineering.'
-
-*   **The Basic V:** We go **down** into the details (Left) and then back **up** into the real world (Right).
-*   **The AI Connection (Dual-Track):** AI is just a subsystem. The V-Model ensures the 'Smart' AI code actually integrates with the 'Real' hardware.
-*   **The Requirement Shift:** Instead of writing rules (If-Then), we design the **Data**. We are engineering the environment the AI learns from.
-*   **The Verification Gap:** We can't test every line of code in a neural network. Verification shifts from 'Does it match logic?' to 'Does it handle the statistical edge cases?'"
+*   **The V-Model Crisis**:
+    *   **Left Side (Design)**: How do you write requirements for a neural net? "Must detect pedestrians" is vague. The requirement becomes the *Training Set*.
+    *   **Right Side (Verification)**: How do you unit test a black box? You can't trace the logic. Verification shifts to *Statistical Validation* on held-out test sets.
+*   **The Dual-Track Lifecycle**: We now have two parallel tracks.
+    1.  **Software Track**: Traditional Code (Rule-based, safe, auditable).
+    2.  **Model Track**: Data Collection -> Training -> Evaluation.
+*   **Integration**: The challenge is merging these. The AI component is just a probabilistic function call within a deterministic safety-critical system.
 :::
 
 ## Operations: The Digital Twin
@@ -247,8 +261,13 @@ We have a bunch of dots (data), and we ask the computer to draw the best line th
 :::
 
 ::: notes
-**Script:**
-"We build a Digital Twin. The physical engine sends data to the digital one. The digital one uses ML to predict failures before they happen."
+*   **The Digital Twin Concept**:
+    *   **Definition**: It is not just a 3D model. It is a probabilistic simulation that runs in parallel with the physical asset.
+    *   **The Loop**:
+        1.  Sensors on the engine send real-time data to the Cloud.
+        2.  The Digital Twin processes this data using ML/Physics models.
+        3.  The Twin predicts a bearing failure 200 hours in advance.
+    *   **Value**: We move from "Reactive Maintenance" (fix it when it breaks) to "Predictive Maintenance" (fix it before it breaks).
 :::
 
 ## Astria: Digital Twin {.smaller}
@@ -273,8 +292,10 @@ We have a bunch of dots (data), and we ask the computer to draw the best line th
 ::::
 
 ::: notes
-**Script:**
-"Here is a concrete example from our research. We have the physical Astria drone, and we have its high-fidelity digital replica. Before we fly near high-voltage lines, we test every control algorithm in the digital twin to ensure the system behaves as expected."
+*   **Safety-Critical Verification**:
+    *   **The Risk**: We cannot just "try" a new AI controller on a heavy drone near high-voltage lines. A crash costs \$50k and risks starting a fire.
+    *   **The Solution**: We validate in the Digital Twin. We run thousands of "Monte Carlo" simulations—varying wind, payload, and sensor noise.
+    *   **Significance**: This is how SE enables AI. We build the sandbox that makes learning safe.
 :::
 
 ## Rimless Wheel: Robustness {.smaller}
@@ -313,6 +334,13 @@ We have a bunch of dots (data), and we ask the computer to draw the best line th
 
 ::::
 
+::: notes
+*   **Robustness in SE**: In classical control, we check feedback stability (Eigenvalues).
+*   **The Problem with Contact**: When a foot hits the ground, the physics change instantly (impact). Eigenvalues don't work well here.
+*   **Basin of Attraction**: Instead, we analyze the "Basin of Attraction"—how big of a disturbance (slope change, push) can the system recover from?
+*   **Visual**: The videos show "stable limit cycles"—a repeating loop of states that handles disturbances naturally without explicit reprogramming.
+:::
+
 # Part 4: Live Case Study {background-color="#154734"}
 
 ## How AI Learns to Control
@@ -332,9 +360,14 @@ We have a bunch of dots (data), and we ask the computer to draw the best line th
 :::
 
 ::: notes
-**Script:**
-"We use Reinforcement Learning.
-The AI tries random things. It fails. It learns. Eventually, it masters the physics."
+*   **Reinforcement Learning (RL)**:
+    *   **The Agent**: The AI controller.
+    *   **The Environment**: The physical laws (gravity, friction).
+    *   **The Loop**:
+        1.  **Observe**: "I am falling left."
+        2.  **Act**: "Spin motor right."
+        3.  **Reward**: "I stayed up for 0.1s! (+1 point)."
+    *   **The Magic**: We don't tell it F=ma. It *discovers* F=ma by trying to maximize points.
 :::
 
 ## Sim2Real: The Reality Check
@@ -358,10 +391,11 @@ The AI tries random things. It fails. It learns. Eventually, it masters the phys
 :::
 
 ::: notes
-**Script:**
-"We train in simulation (perfect).
-We deploy to reality (messy).
-If the model overfits, the robot crashes. We need Robust Control."
+*   **The Reality Gap**:
+    *   **Simulation**: Perfect friction, no delay, perfect sensors.
+    *   **Reality**: Grease, 10ms delay, noisy encoders.
+    *   **The Failure Mode**: A policy trained only in a perfect sim will fail instantly in reality. It "overfits" to the physics engine.
+    *   **Domain Randomization**: We train the AI in a "Shiftng Simulation"—randomly changing gravity, mass, and friction every episode. This forces the AI to learn a *robust* policy that works across a range of physics.
 :::
 
 ## Learning to Walk: RL in Action {.smaller}
@@ -383,6 +417,12 @@ If the model overfits, the robot crashes. We need Robust Control."
 
 ::::
 
+::: notes
+*   **Emergent Behavior**: We defined the *goal* (move +z), not the *method*.
+*   **The Result**: The AI discovered a "galloping" gait. This is often more efficient than what a human would code manually.
+*   **Caveat**: It also discovered that vibrating on the spot earned points. We had to fix the reward function. This is "Reward Hacking" — a major safety concern in AI.
+:::
+
 
 ## The Furuta Pendulum
 
@@ -400,11 +440,10 @@ If the model overfits, the robot crashes. We need Robust Control."
 :::
 
 ::: notes
-**Script:**
-(Walk to the table)
-"Here it is. The Furuta Pendulum.
-It has a motor, an arm, and a pendulum.
-It looks like a system. But is it?"
+*   **The Hardware**:
+    *   **Underactuated**: 2 degrees of freedom (arm, pendulum), but only 1 motor. You can't just "command" the pendulum to go up. You have to swing it.
+    *   **Nonlinear**: Gravity acts differently depending on the angle.
+    *   **The Challenge**: Using a Neural Network to swing this up and balance it, replacing the 3 pages of differential equations I usually use.
 :::
 
 ## Integration: The Furuta Pendulum {.smaller}
@@ -433,11 +472,11 @@ It looks like a system. But is it?"
     *   *Video shows successful operation from Boise State lab.*
 
 ::: notes
-**Script:**
-"Here is the plan.
-On the left, we have the Neural Network controller (the brain).
-On the right, we have the video of it working perfectly in my previous lab.
-Currently, due to the move, the hardware and software are disconnected. That is the **Integration Gap** we need to solve."
+*   **The Integration Plan**:
+    1.  **Phase 1 (Sim)**: Train the Policy using PPO (Proximal Policy Optimization).
+    2.  **Phase 2 (Gap verify)**: Test the policy with added noise.
+    3.  **Phase 3 (Deploy)**: Run the neural net on the embedded microcontroller (Raspberry Pi / Arduino).
+*   **Status**: The hardware is physically here. The code is trained. We are working on the *Interface*—getting the Python weights to run on the C++ driver.
 :::
 
 
@@ -462,10 +501,11 @@ Currently, due to the move, the hardware and software are disconnected. That is 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colored_neural_network.svg/640px-Colored_neural_network.svg.png){height="300" fig-align="center"}
 
 ::: notes
-**Script:**
-"Traditional code is readable.
-Neural networks are millions of opaque numbers.
-Traceability is a massive open problem in SE."
+*   **Traceability**: In SE, we need to trace every line of code to a requirement.
+*   **Explainable AI (XAI)**:
+    *   **Saliency Maps**: "Why did the car stop? Because it saw these pixels."
+    *   **Counterfactuals**: "What if the pedestrian was wearing blue?"
+*   **The Trade-off**: We often trade *Accuracy* (Deep Learning) for *Interpretability* (Decision Trees). For safety-critical systems, we might prefer a dumber but understandable model.
 :::
 
 ## The Ethics of AI
@@ -473,9 +513,9 @@ Traceability is a massive open problem in SE."
 ![](https://upload.wikimedia.org/wikipedia/commons/f/fd/Trolley_Problem.svg){height="400" fig-align="center"}
 
 ::: notes
-**Script:**
-"If an autonomous car hits a pedestrian to save the passenger, who is responsible?
-As we build autonomous systems, we are engineering moral agents."
+*   **The Trolley Problem**: It's not just philosophy anymore. It's code.
+*   **Accountability**: If the AI makes a mistake, who is liable? The engineer? The company? The dataset creator?
+*   **Bias**: If the training data only has sunny days, the car will kill people in the rain. Systems Engineering must ensure *Data Coverage* just like we ensure *Test Coverage*.
 :::
 
 # Conclusion
